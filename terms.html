@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Terms of Use for Exercise Snacks: Desk Breaks — please read before using the app.">
+  <title>Terms of Use — Exercise Snacks: Desk Breaks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Legal page overrides — identical to privacy.html */
+    .legal-nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--grey-border);
+      padding: 1.1rem 0;
+    }
+    .legal-nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .legal-nav-brand {
+      font-family: var(--font-sans);
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--dark);
+    }
+    .legal-nav-back {
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--coral);
+      display: flex;
+      align-items: center;
+      gap: 0.3em;
+      transition: opacity 0.15s ease;
+    }
+    .legal-nav-back:hover { opacity: 0.75; }
+
+    .legal-hero {
+      background: var(--sage-light);
+      padding: 4rem 0 3rem;
+    }
+    .legal-hero .eyebrow { margin-bottom: 0.75rem; }
+    .legal-hero h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 0.5rem;
+    }
+    .legal-meta {
+      font-size: 0.9rem;
+      color: var(--mid);
+    }
+
+    .legal-body {
+      padding: 4rem 0 6rem;
+    }
+    .legal-content {
+      max-width: 720px;
+    }
+    .legal-content h2 {
+      font-family: var(--font-sans);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin: 2.5rem 0 0.6rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--grey-border);
+    }
+    .legal-content h2:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .legal-content p {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: var(--mid);
+      margin-bottom: 1rem;
+    }
+    .legal-content ul {
+      list-style: none;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .legal-content ul li {
+      font-size: 1rem;
+      color: var(--mid);
+      padding-left: 1.4em;
+      position: relative;
+      line-height: 1.65;
+    }
+    .legal-content ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--sage);
+    }
+    .legal-content a {
+      color: var(--coral);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .legal-content a:hover { opacity: 0.8; }
+    .legal-content strong { color: var(--dark); font-weight: 600; }
+
+    .warning-card {
+      background: #FFF8F0;
+      border: 1px solid #F5C49A;
+      border-left: 4px solid var(--coral);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.975rem;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+    .warning-card strong {
+      display: block;
+      color: var(--dark);
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .info-card {
+      background: var(--grey-light);
+      border: 1px solid var(--grey-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      font-size: 0.975rem;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+    .info-card strong {
+      display: block;
+      color: var(--dark);
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="legal-nav">
+    <div class="container">
+      <span class="legal-nav-brand">Exercise Snacks: Desk Breaks</span>
+      <a href="/" class="legal-nav-back">← Back to home</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="legal-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow-sage">Legal</span>
+      <h1>Terms of Use</h1>
+      <p class="legal-meta">Last updated: February 2026 (v1.1 — Apple Health &amp; Analytics clause added)</p>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <section class="legal-body">
+    <div class="container">
+      <div class="legal-content">
+
+        <p>Please read these Terms of Use carefully before using the Exercise Snacks app. By downloading, installing, or using the app, you agree to be bound by these terms. If you do not agree, do not use the app.</p>
+
+        <h2>1. Health &amp; Medical Disclaimer</h2>
+
+        <div class="warning-card">
+          <strong>Important — Please Read</strong>
+          Exercise Snacks provides general fitness guidance for informational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider before beginning any new exercise programme, particularly if you have a pre-existing medical condition, injury, cardiovascular condition, or are pregnant or postpartum.
+        </div>
+
+        <p>By using this app, you acknowledge and agree that:</p>
+        <ul>
+          <li>You participate in any exercise activity entirely at your own risk.</li>
+          <li>You will stop exercising immediately if you experience pain, dizziness, shortness of breath, chest discomfort, or any other unusual symptom, and seek medical attention if necessary.</li>
+          <li>The exercises provided may not be suitable for everyone. It is your responsibility to determine whether an exercise is appropriate for your individual circumstances.</li>
+          <li>We make no representation that the information in this app is accurate, complete, or suitable for your specific health needs.</li>
+        </ul>
+
+        <h2>2. Assumption of Risk &amp; Limitation of Liability</h2>
+        <p>To the fullest extent permitted by applicable law, Exercise Snacks and its developers shall not be liable for any injury, loss, claim, damage, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind arising from your use of the app or participation in any exercise activity suggested by the app.</p>
+        <p>You voluntarily and knowingly assume full responsibility for all risks associated with the use of this app, including but not limited to physical injury, property damage, or death.</p>
+
+        <h2>3. Eligibility</h2>
+        <p>You must be at least 13 years old to use Exercise Snacks. By using the app you confirm that you meet this age requirement. Users under 18 should have parental or guardian consent before using the app.</p>
+
+        <h2>4. Subscriptions and Purchases</h2>
+        <p>Exercise Snacks offers an optional premium subscription (Annual — £49.99/year) to unlock the full exercise library and advanced features.</p>
+        <ul>
+          <li><strong>Billing:</strong> Payment is charged to your Apple ID account at confirmation of purchase.</li>
+          <li><strong>Auto-renewal:</strong> Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period.</li>
+          <li><strong>Cancellation:</strong> You can manage and cancel your subscription at any time in your iOS Settings → Apple ID → Subscriptions.</li>
+          <li><strong>Refunds:</strong> Refunds are handled by Apple in accordance with their refund policy. We do not issue refunds directly.</li>
+          <li><strong>Free features:</strong> A free tier with limited access remains available without a subscription.</li>
+        </ul>
+
+        <h2>5. Intellectual Property</h2>
+        <p>All content within Exercise Snacks, including but not limited to text, graphics, exercise descriptions, and the app design, is owned by or licensed to us and is protected by copyright and other intellectual property laws. You may not copy, reproduce, distribute, or create derivative works from any content in the app without our express written permission.</p>
+
+        <h2>6. Acceptable Use</h2>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Use the app for any unlawful purpose.</li>
+          <li>Attempt to reverse engineer, decompile, or tamper with the app.</li>
+          <li>Use the app in any way that could damage, disable, or impair it.</li>
+        </ul>
+
+        <h2>7. Disclaimer of Warranties</h2>
+        <p>The app is provided on an "as is" and "as available" basis without warranties of any kind, either express or implied. We do not warrant that the app will be error-free, uninterrupted, or free of harmful components. We reserve the right to modify, suspend, or discontinue the app at any time without notice.</p>
+
+        <h2>8. Third-Party Services</h2>
+        <p>The app uses RevenueCat to process in-app purchases. Your use of that service is subject to RevenueCat's own terms and privacy policy. All App Store transactions are governed by Apple's terms of service.</p>
+        <p>The app uses Google Firebase Analytics to collect anonymised usage data to help us improve the app. No personally identifiable information is collected. Your use of the app is subject to Google's terms of service.</p>
+
+        <h2>8a. Apple Health Integration</h2>
+        <p>Exercise Snacks can optionally write workout data to Apple Health on your device. By granting this permission, you acknowledge that:</p>
+        <ul>
+          <li>Workout data (exercise type, duration, and estimated calories) will be written to the Apple Health app on your device.</li>
+          <li>We do not read any Health data — only write completed workout entries.</li>
+          <li>Apple Health data is governed by Apple's privacy policy and remains on your device.</li>
+          <li>You can revoke this permission at any time in iOS Settings → Privacy &amp; Security → Health → Exercise Snacks.</li>
+        </ul>
+
+        <h2>9. Governing Law</h2>
+        <p>These Terms of Use are governed by and construed in accordance with the laws of England and Wales. Any disputes arising from these terms or your use of the app shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+
+        <h2>10. Changes to These Terms</h2>
+        <p>We reserve the right to update these Terms of Use at any time. We will indicate the date of the most recent update at the top of this page. Your continued use of the app after any changes constitutes your acceptance of the new terms.</p>
+
+        <h2>11. Contact</h2>
+        <p>If you have any questions about these Terms of Use, please contact us at:<br>
+        <a href="mailto:mithul.mistry@gmail.com">mithul.mistry@gmail.com</a></p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Bar -->
+  <footer class="footer-bar">
+    <div class="container footer-bar-inner">
+      <span class="footer-brand">Exercise Snacks: Desk Breaks</span>
+      <span class="footer-copy">© 2025 Mithul Mistry</span>
+      <nav class="footer-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Use</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
