@@ -215,10 +215,12 @@ p {
 /* Grid children stagger */
 .stats-grid   .animate-up:nth-child(2),
 .benefits-grid .animate-up:nth-child(2),
+.modes-grid    .animate-up:nth-child(2),
 .pricing-grid  .animate-up:nth-child(2) { transition-delay: 0.12s; }
 
 .stats-grid   .animate-up:nth-child(3),
-.benefits-grid .animate-up:nth-child(3) { transition-delay: 0.22s; }
+.benefits-grid .animate-up:nth-child(3),
+.modes-grid    .animate-up:nth-child(3) { transition-delay: 0.22s; }
 
 .benefits-grid .animate-up:nth-child(4) { transition-delay: 0.32s; }
 
@@ -452,6 +454,112 @@ p {
 }
 
 /* =========================================================
+   Break Modes Section
+   ========================================================= */
+.break-modes {
+  background: var(--grey-light);
+  padding: 6rem 0;
+  border-top: 1px solid var(--grey-border);
+}
+
+.modes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.mode-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.mode-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.mode-card--featured {
+  border-color: var(--coral);
+  box-shadow: var(--shadow-lg);
+}
+
+.mode-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--coral);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3em 1em;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
+.mode-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  flex-shrink: 0;
+}
+
+.mode-icon--coral {
+  background: var(--coral-light);
+}
+
+.mode-icon--sage {
+  background: var(--sage-light);
+}
+
+.mode-card h3 {
+  margin-bottom: 0;
+}
+
+.mode-interval {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin-bottom: 0.25rem;
+}
+
+.mode-card p {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  flex: 1;
+}
+
+.mode-stats {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--mid);
+  background: var(--grey-light);
+  border-radius: var(--radius-sm);
+  padding: 0.4em 0.75em;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+/* =========================================================
    Pricing
    ========================================================= */
 .pricing {
@@ -668,6 +776,10 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .modes-grid {
+    grid-template-columns: 1fr;
+  }
+
   .pricing-grid {
     grid-template-columns: 1fr;
   }
@@ -699,6 +811,10 @@ p {
    ========================================================= */
 @media (min-width: 601px) and (max-width: 900px) {
   .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modes-grid {
     grid-template-columns: 1fr;
   }
 
