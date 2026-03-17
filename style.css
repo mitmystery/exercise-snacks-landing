@@ -336,6 +336,21 @@ p {
   line-height: 1.4;
 }
 
+.stat-source {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--sage);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity 0.15s ease;
+}
+
+.stat-source:hover {
+  opacity: 0.75;
+}
+
 /* =========================================================
    Science Section
    ========================================================= */
@@ -355,6 +370,33 @@ p {
   color: var(--dark);
   line-height: 1.7;
   max-width: 780px;
+}
+
+.science-sources {
+  margin-top: 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-style: normal;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.science-sources a {
+  color: var(--sage);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity 0.15s ease;
+}
+
+.science-sources a:hover {
+  opacity: 0.75;
+}
+
+.source-sep {
+  color: var(--mid);
+  opacity: 0.5;
 }
 
 .quote-mark {
@@ -417,6 +459,21 @@ p {
 .benefit-card p {
   font-size: 0.95rem;
   line-height: 1.6;
+}
+
+.benefit-source {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--sage);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity 0.15s ease;
+}
+
+.benefit-source:hover {
+  opacity: 0.75;
 }
 
 /* =========================================================
