@@ -131,12 +131,12 @@ p {
 
 .eyebrow-sage {
   background: var(--sage-light);
-  color: var(--sage);
+  color: #0a6040;
 }
 
 .eyebrow-coral {
   background: var(--coral-light);
-  color: var(--coral);
+  color: #a8391a;
 }
 
 /* =========================================================
@@ -196,9 +196,12 @@ p {
    Entrance Animations
    ========================================================= */
 .animate-up {
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.js .animate-up {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.55s ease, transform 0.55s ease;
 }
 
 .animate-up.visible {
@@ -519,12 +522,12 @@ p {
 
 .pill--coral {
   background: var(--coral-light);
-  color: var(--coral);
+  color: #a8391a;
 }
 
 .pill--sage {
   background: var(--sage-light);
-  color: var(--sage);
+  color: #0a6040;
 }
 
 /* =========================================================
@@ -807,7 +810,7 @@ p {
 
 .footer-copy {
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.6);
 }
 
 .footer-links {
