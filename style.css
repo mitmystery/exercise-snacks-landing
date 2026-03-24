@@ -614,7 +614,7 @@ p {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--coral);
+  color: #a8391a;
   margin-bottom: 0.25rem;
 }
 
@@ -736,7 +736,7 @@ p {
 }
 
 .feature-check {
-  color: var(--sage);
+  color: #0a6040;
   font-weight: 700;
   font-size: 0.9rem;
   flex-shrink: 0;
