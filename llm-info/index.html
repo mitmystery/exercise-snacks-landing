@@ -16,7 +16,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" /></noscript>
 
   <style>
     :root {
@@ -30,7 +31,7 @@
       --cream: #F5F3EF;
       --text-dark: #2B2825;
       --text-mid: #5C5651;
-      --text-light: #9A948E;
+      --text-light: #706C68;
       --border: #E8E4DE;
       --radius: 16px;
       --radius-sm: 10px;
@@ -175,7 +176,7 @@
 
     .hero-stat-label {
       font-size: 12px;
-      color: rgba(255,255,255,0.75);
+      color: rgba(255,255,255,0.95);
       font-weight: 600;
       letter-spacing: 0.3px;
       margin-top: 4px;
@@ -486,7 +487,7 @@
       margin-bottom: 48px;
     }
 
-    .toc h3 {
+    .toc-title {
       font-size: 12px;
       font-weight: 800;
       letter-spacing: 1.2px;
@@ -626,7 +627,7 @@
 
       <!-- TABLE OF CONTENTS -->
       <div class="toc">
-        <h3>On this page</h3>
+        <p class="toc-title">On this page</p>
         <div class="toc-links">
           <a href="#brand-summary">Brand Summary</a>
           <a href="#product">Core Product & Features</a>
