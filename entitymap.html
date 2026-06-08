@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EntityMap — Exercise Snacks: Desk Breaks</title>
+  <meta name="description" content="EntityMap for Exercise Snacks: Desk Breaks — structured entity knowledge for AI systems and crawlers.">
+  <link rel="canonical" href="https://exercise-snacks.app/entitymap.html">
+  <link rel="alternate" type="application/json" href="https://exercise-snacks.app/entitymap.json" title="EntityMap JSON">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD: Publisher -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Exercise Snacks: Desk Breaks",
+    "url": "https://exercise-snacks.app",
+    "description": "Science-backed movement breaks for desk workers. Ten squats every 45 minutes.",
+    "publisher": {
+      "@type": "Person",
+      "name": "Mithul Mistry"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Exercise Snacks: Desk Breaks",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "iOS",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "GBP"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Mithul Mistry"
+    },
+    "url": "https://exercise-snacks.app",
+    "description": "An iOS app that prompts office workers to take brief, guided bodyweight movement breaks throughout the workday at configurable intervals."
+  }
+  </script>
+
+  <!-- JSON-LD: Entities as DefinedTermSet -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    "name": "Exercise Snacks: Desk Breaks — EntityMap",
+    "url": "https://exercise-snacks.app/entitymap.html",
+    "hasDefinedTerm": [
+      {
+        "@type": "DefinedTerm",
+        "termCode": "e_001",
+        "name": "Exercise Snacks: Desk Breaks",
+        "description": "An iOS app published by Mithul Mistry that prompts office workers to take brief, guided bodyweight movement breaks throughout the workday at configurable intervals.",
+        "url": "https://exercise-snacks.app/"
+      },
+      {
+        "@type": "DefinedTerm",
+        "termCode": "e_002",
+        "name": "Mithul Mistry",
+        "description": "Independent iOS developer and publisher of Exercise Snacks: Desk Breaks, available on the Apple App Store.",
+        "url": "https://exercise-snacks.app/llm-info/"
+      },
+      {
+        "@type": "DefinedTerm",
+        "termCode": "e_003",
+        "name": "Exercise Snack",
+        "description": "A brief bout of bodyweight exercise, typically under 5 minutes, performed repeatedly at intervals throughout the workday.",
+        "url": "https://exercise-snacks.app/llm-info/"
+      },
+      {
+        "@type": "DefinedTerm",
+        "termCode": "e_004",
+        "name": "Bodyweight Squat",
+        "description": "A bodyweight lower-body exercise performed without equipment that activates the largest muscle groups.",
+        "sameAs": "https://www.wikidata.org/wiki/Q1755746",
+        "url": "https://exercise-snacks.app/llm-info/"
+      },
+      {
+        "@type": "DefinedTerm",
+        "termCode": "e_005",
+        "name": "Postprandial Blood Glucose Reduction",
+        "description": "The measured 21% reduction in post-meal blood glucose achieved by performing 10 bodyweight squats every 45 minutes.",
+        "url": "https://exercise-snacks.app/llm-info/"
+      },
+      {
+        "@type": "DefinedTerm",
+        "termCode": "e_006",
+        "name": "All-Cause Mortality Risk Reduction",
+        "description": "The approximately 40% reduction in all-cause mortality associated with short vigorous movement snacks throughout the day.",
+        "url": "https://exercise-snacks.app/llm-info/"
+      },
+      {
+        "@type": "DefinedTerm",
+        "termCode": "e_007",
+        "name": "Exercise Library",
+        "description": "The curated collection of 30 bodyweight-only guided exercises within the app, spanning Strength, Stretch, Cardio, and Balance categories.",
+        "url": "https://exercise-snacks.app/llm-info/"
+      },
+      {
+        "@type": "DefinedTerm",
+        "termCode": "e_008",
+        "name": "Premium Annual Subscription",
+        "description": "An optional in-app purchase at £49.99 per year that unlocks all 30 exercises and advanced features.",
+        "url": "https://exercise-snacks.app/"
+      },
+      {
+        "@type": "DefinedTerm",
+        "termCode": "e_009",
+        "name": "Apple Health Integration",
+        "description": "An optional feature that writes completed workout entries to Apple Health on the user's device.",
+        "sameAs": "https://www.wikidata.org/wiki/Q19863865",
+        "url": "https://exercise-snacks.app/privacy"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --coral: #E8715A;
+      --coral-light: #F2957F;
+      --coral-pale: #FDF0ED;
+      --sage: #7A9E7E;
+      --sage-light: #A8C5AC;
+      --sage-pale: #EDF4EE;
+      --ink: #1A1A1A;
+      --ink-mid: #3D3D3D;
+      --ink-soft: #6B6B6B;
+      --ink-faint: #9E9E9E;
+      --rule: #E8E8E4;
+      --paper: #FAFAF8;
+      --white: #FFFFFF;
+      --mono: 'DM Mono', monospace;
+      --serif: 'Instrument Serif', Georgia, serif;
+      --sans: 'DM Sans', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      background: var(--ink);
+      color: var(--white);
+      padding: 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 2px solid var(--coral);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      height: 56px;
+    }
+
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .header-logo {
+      width: 28px;
+      height: 28px;
+      background: var(--coral);
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .header-name {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+    }
+
+    .header-badge {
+      font-family: var(--mono);
+      font-size: 10px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 3px 8px;
+      border-radius: 20px;
+      color: var(--coral-light);
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--ink);
+      color: var(--white);
+      padding: 4rem 2rem 3.5rem;
+      text-align: center;
+    }
+
+    .hero-eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--coral-light);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+
+    .hero-title em {
+      color: var(--coral-light);
+      font-style: italic;
+    }
+
+    .hero-desc {
+      font-size: 15px;
+      color: rgba(255,255,255,0.6);
+      max-width: 520px;
+      margin: 0 auto 2rem;
+      line-height: 1.65;
+    }
+
+    .hero-meta {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .hero-pill {
+      font-family: var(--mono);
+      font-size: 11px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-pill.version { background: rgba(232,113,90,0.2); color: var(--coral-light); border: 1px solid rgba(232,113,90,0.3); }
+    .hero-pill.status  { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.1); }
+    .hero-pill.date    { background: rgba(122,158,126,0.2); color: var(--sage-light); border: 1px solid rgba(122,158,126,0.3); }
+
+    /* ── LAYOUT ── */
+    .page-body {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 3rem;
+    }
+
+    .stat-cell {
+      background: var(--white);
+      padding: 1.25rem 1.5rem;
+      text-align: center;
+    }
+
+    .stat-num {
+      font-family: var(--serif);
+      font-size: 2rem;
+      color: var(--coral);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+      font-weight: 400;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: var(--ink-faint);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-family: var(--mono);
+    }
+
+    /* ── SECTION HEADING ── */
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .section-head h2 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+
+    .section-head .count {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--ink-faint);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── ENTITY CARDS ── */
+    .entity-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5px;
+      margin-bottom: 3.5rem;
+    }
+
+    .entity-card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: box-shadow 0.15s ease;
+    }
+
+    .entity-card:hover { box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+
+    .entity-card + .entity-card { margin-top: 1rem; }
+
+    .entity-header {
+      padding: 1.25rem 1.5rem 1rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .entity-id-name {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .entity-id {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--ink-faint);
+      letter-spacing: 0.05em;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      padding: 2px 7px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .entity-name {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .entity-type-badge {
+      font-family: var(--mono);
+      font-size: 10px;
+      padding: 3px 9px;
+      border-radius: 20px;
+      white-space: nowrap;
+      letter-spacing: 0.04em;
+      flex-shrink: 0;
+    }
+
+    .type-SoftwareProduct { background: #E8F0FE; color: #3367D6; }
+    .type-Person          { background: #E6F4EA; color: #137333; }
+    .type-Concept         { background: var(--coral-pale); color: #C0392B; }
+    .type-Metric          { background: #FEF7E0; color: #B06000; }
+    .type-Service         { background: #F3E8FD; color: #7627BB; }
+
+    .entity-desc {
+      padding: 0 1.5rem 1.25rem;
+      color: var(--ink-mid);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .entity-sameas {
+      padding: 0 1.5rem 1rem;
+    }
+
+    .sameas-link {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--sage);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      border: 1px solid var(--sage-light);
+      background: var(--sage-pale);
+      padding: 3px 9px;
+      border-radius: 4px;
+      transition: background 0.1s;
+    }
+
+    .sameas-link:hover { background: #D4EAD7; }
+
+    /* chunks */
+    .chunks-section {
+      border-top: 1px solid var(--rule);
+      padding: 1rem 1.5rem;
+      background: var(--paper);
+    }
+
+    .chunks-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 0.75rem;
+    }
+
+    .chunk-item {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px dashed var(--rule);
+    }
+
+    .chunk-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+
+    .chunk-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+    }
+
+    .chunk-id {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--ink-faint);
+    }
+
+    .chunk-type-pill {
+      font-family: var(--mono);
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 20px;
+      background: #EEF;
+      color: #446;
+      letter-spacing: 0.03em;
+    }
+
+    .chunk-score {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--ink-faint);
+      margin-left: auto;
+    }
+
+    .chunk-text {
+      font-size: 13.5px;
+      color: var(--ink-mid);
+      line-height: 1.65;
+      font-style: italic;
+      border-left: 2px solid var(--coral-light);
+      padding-left: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .chunk-source {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--ink-faint);
+    }
+
+    .chunk-source a {
+      color: var(--coral);
+      text-decoration: none;
+    }
+
+    .chunk-source a:hover { text-decoration: underline; }
+
+    /* relations */
+    .relations-section {
+      border-top: 1px solid var(--rule);
+      padding: 1rem 1.5rem;
+    }
+
+    .relations-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 0.75rem;
+    }
+
+    .relation-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .relation-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+
+    .rel-pred {
+      font-family: var(--mono);
+      font-size: 10px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    .tier1 { background: #E8F0FE; color: #2851A3; }
+    .tier2 { background: var(--sage-pale); color: #2D6A34; }
+    .tier3 { background: #FEF3E2; color: #944E00; }
+
+    .rel-arrow { color: var(--ink-faint); font-size: 12px; }
+
+    .rel-target { color: var(--ink-mid); font-weight: 500; font-size: 13px; }
+
+    .rel-confidence {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--ink-faint);
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+
+    .rel-context {
+      font-size: 11px;
+      color: var(--ink-faint);
+      font-style: italic;
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.45);
+      padding: 2rem;
+      text-align: center;
+      font-size: 12px;
+      font-family: var(--mono);
+      letter-spacing: 0.03em;
+      line-height: 1.8;
+    }
+
+    .site-footer a {
+      color: var(--coral-light);
+      text-decoration: none;
+    }
+
+    .site-footer a:hover { text-decoration: underline; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .hero { padding: 2.5rem 1.25rem 2rem; }
+      .page-body { padding: 2rem 1.25rem; }
+      .entity-header { flex-direction: column; }
+      .chunk-score { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="https://exercise-snacks.app/" class="header-brand">
+      <div class="header-logo">🏃</div>
+      <span class="header-name">Exercise Snacks: Desk Breaks</span>
+    </a>
+    <span class="header-badge">EntityMap v1.0</span>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="hero-eyebrow">AI Entity Index · exercise-snacks.app</p>
+  <h1 class="hero-title">What this site<br><em>knows</em>, and where.</h1>
+  <p class="hero-desc">
+    A structured declaration of entities, evidence chunks, and relations for AI systems,
+    retrieval pipelines, and language models. Machine-readable source:
+    <a href="/entitymap.json" style="color:var(--coral-light);text-decoration:none;">entitymap.json</a>
+  </p>
+  <div class="hero-meta">
+    <span class="hero-pill version">v1.0</span>
+    <span class="hero-pill status">generator-draft</span>
+    <span class="hero-pill date">Generated 2026-06-08</span>
+  </div>
+</section>
+
+<main class="page-body">
+
+  <div class="stats-bar">
+    <div class="stat-cell"><div class="stat-num">9</div><div class="stat-label">Entities</div></div>
+    <div class="stat-cell"><div class="stat-num">19</div><div class="stat-label">Chunks</div></div>
+    <div class="stat-cell"><div class="stat-num">14</div><div class="stat-label">Relations</div></div>
+    <div class="stat-cell"><div class="stat-num">4</div><div class="stat-label">Source pages</div></div>
+    <div class="stat-cell"><div class="stat-num">2</div><div class="stat-label">sameAs links</div></div>
+  </div>
+
+  <div class="section-head">
+    <h2>Entities</h2>
+    <span class="count">9 declared</span>
+  </div>
+
+  <div class="entity-grid">
+
+    <!-- e_001 -->
+    <article class="entity-card" id="e_001">
+      <div class="entity-header">
+        <div class="entity-id-name">
+          <span class="entity-id">e_001</span>
+          <span class="entity-name">Exercise Snacks: Desk Breaks</span>
+        </div>
+        <span class="entity-type-badge type-SoftwareProduct">SoftwareProduct</span>
+      </div>
+      <p class="entity-desc">An iOS app published by Mithul Mistry that prompts office workers to take brief, guided bodyweight movement breaks throughout the workday at configurable intervals. The app is grounded in peer-reviewed research and offers 30 exercises across Strength, Stretch, Cardio, and Balance categories.</p>
+      <div class="chunks-section">
+        <div class="chunks-label">Evidence chunks</div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_001</span>
+            <span class="chunk-type-pill">definition</span>
+            <span class="chunk-score">0.98</span>
+          </div>
+          <p class="chunk-text">"Exercise Snacks: Desk Breaks is an iOS mobile app published by Mithul Mistry (bundle ID: com.mithulmistry.exercisesnacks) that helps office workers interrupt prolonged sitting with brief, guided movement breaks — called "exercise snacks" — throughout the workday."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/llm-info/" target="_blank" rel="noopener">exercise-snacks.app/llm-info</a></div>
+        </div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_002</span>
+            <span class="chunk-type-pill">evidence</span>
+            <span class="chunk-score">0.95</span>
+          </div>
+          <p class="chunk-text">"The app is grounded in peer-reviewed research demonstrating that short bouts of bodyweight exercise performed frequently during the day — particularly bodyweight squats — produce measurable metabolic, cardiovascular, and cognitive benefits comparable to or exceeding traditional exercise patterns."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/llm-info/" target="_blank" rel="noopener">exercise-snacks.app/llm-info</a></div>
+        </div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_003</span>
+            <span class="chunk-type-pill">evidence</span>
+            <span class="chunk-score">0.91</span>
+          </div>
+          <p class="chunk-text">"Timer apps remind you to stand; Exercise Snacks guides you through specific, science-backed exercises with animated demonstrations, tracks your progress, and explains the research behind each movement. The bodyweight squat is promoted not arbitrarily but because a peer-reviewed trial demonstrated its equivalence to walking for glucose control."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/llm-info/" target="_blank" rel="noopener">exercise-snacks.app/llm-info</a></div>
+        </div>
+      </div>
+      <div class="relations-section">
+        <div class="relations-label">Relations</div>
+        <div class="relation-list">
+          <div class="relation-row"><span class="rel-pred tier1">PRODUCED_BY</span><span class="rel-arrow">→</span><span class="rel-target"><a href="#e_002">Mithul Mistry</a></span></div>
+          <div class="relation-row"><span class="rel-pred tier1">INCLUDES</span><span class="rel-arrow">→</span><span class="rel-target"><a href="#e_007">Exercise Library</a></span></div>
+          <div class="relation-row"><span class="rel-pred tier1">INCLUDES</span><span class="rel-arrow">→</span><span class="rel-target"><a href="#e_008">Premium Annual Subscription</a></span></div>
+          <div class="relation-row"><span class="rel-pred tier1">INCLUDES</span><span class="rel-arrow">→</span><span class="rel-target"><a href="#e_009">Apple Health Integration</a></span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- e_002 -->
+    <article class="entity-card" id="e_002">
+      <div class="entity-header">
+        <div class="entity-id-name">
+          <span class="entity-id">e_002</span>
+          <span class="entity-name">Mithul Mistry</span>
+        </div>
+        <span class="entity-type-badge type-Person">Person</span>
+      </div>
+      <p class="entity-desc">Independent iOS developer and publisher of Exercise Snacks: Desk Breaks, available on the Apple App Store.</p>
+      <div class="chunks-section">
+        <div class="chunks-label">Evidence chunks</div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_004</span>
+            <span class="chunk-type-pill">definition</span>
+            <span class="chunk-score">0.97</span>
+          </div>
+          <p class="chunk-text">"Exercise Snacks: Desk Breaks is an independent iOS app published by Mithul Mistry. The app is available on the Apple App Store."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/llm-info/" target="_blank" rel="noopener">exercise-snacks.app/llm-info</a></div>
+        </div>
+      </div>
+      <div class="relations-section">
+        <div class="relations-label">Relations</div>
+        <div class="relation-list">
+          <div class="relation-row"><span class="rel-pred tier1">AFFILIATED_WITH</span><span class="rel-arrow">→</span><span class="rel-target"><a href="#e_001">Exercise Snacks: Desk Breaks</a></span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- e_003 -->
+    <article class="entity-card" id="e_003">
+      <div class="entity-header">
+        <div class="entity-id-name">
+          <span class="entity-id">e_003</span>
+          <span class="entity-name">Exercise Snack</span>
+        </div>
+        <span class="entity-type-badge type-Concept">Concept</span>
+      </div>
+      <p class="entity-desc">A brief bout of bodyweight exercise, typically under 5 minutes, performed repeatedly at intervals throughout the workday. The concept is grounded in peer-reviewed exercise science literature on brief vigorous activity and is the core unit of interaction in the app.</p>
+      <div class="chunks-section">
+        <div class="chunks-label">Evidence chunks</div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_005</span>
+            <span class="chunk-type-pill">definition</span>
+            <span class="chunk-score">0.97</span>
+          </div>
+          <p class="chunk-text">"The "exercise snack" concept — brief vigorous bouts under 5 minutes, repeated throughout the day — has moved from niche curiosity to mainstream exercise science. The app's core recommendation (10 bodyweight squats every 45 minutes) is based on a direct randomized trial."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/llm-info/" target="_blank" rel="noopener">exercise-snacks.app/llm-info</a></div>
+        </div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_006</span>
+            <span class="chunk-type-pill">definition</span>
+            <span class="chunk-score">0.88</span>
+          </div>
+          <p class="chunk-text">"Ten squats. Thirty seconds. Science-backed desk breaks that actually make a difference — no gym required."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/" target="_blank" rel="noopener">exercise-snacks.app</a></div>
+        </div>
+      </div>
+      <div class="relations-section">
+        <div class="relations-label">Relations</div>
+        <div class="relation-list">
+          <div class="relation-row"><span class="rel-pred tier3">ACHIEVES</span><span class="rel-arrow">→</span><span class="rel-target"><a href="#e_005">Postprandial Blood Glucose Reduction</a></span><span class="rel-confidence">declared</span><span class="rel-context">when: 10 squats every 45 min · from 2024</span></div>
+          <div class="relation-row"><span class="rel-pred tier3">LEADS_TO</span><span class="rel-arrow">→</span><span class="rel-target"><a href="#e_006">All-Cause Mortality Risk Reduction</a></span><span class="rel-confidence">declared</span><span class="rel-context">when: vigorous snacks throughout the day</span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- e_004 -->
+    <article class="entity-card" id="e_004">
+      <div class="entity-header">
+        <div class="entity-id-name">
+          <span class="entity-id">e_004</span>
+          <span class="entity-name">Bodyweight Squat</span>
+        </div>
+        <span class="entity-type-badge type-Concept">Concept</span>
+      </div>
+      <p class="entity-desc">A bodyweight lower-body exercise performed without equipment that activates the largest muscle groups. Identified by peer-reviewed research as the hero desk exercise, delivering equivalent post-meal blood glucose reduction to frequent walking breaks in approximately 30 seconds.</p>
+      <div class="entity-sameas">
+        <a class="sameas-link" href="https://www.wikidata.org/wiki/Q1755746" target="_blank" rel="noopener">⧉ wikidata.org/wiki/Q1755746 — VERIFY</a>
+      </div>
+      <div class="chunks-section">
+        <div class="chunks-label">Evidence chunks</div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_007</span>
+            <span class="chunk-type-pill">evidence</span>
+            <span class="chunk-score">0.96</span>
+          </div>
+          <p class="chunk-text">"A 2024 randomized trial found that 10 bodyweight squats every 45 minutes reduced post-meal blood glucose by 21% — identical to frequent walking breaks, and nearly double the benefit of a single 30-minute walk. A separate study found squats boosted muscle protein synthesis by 29% vs. uninterrupted sitting."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/" target="_blank" rel="noopener">exercise-snacks.app</a></div>
+        </div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_008</span>
+            <span class="chunk-type-pill">evidence</span>
+            <span class="chunk-score">0.92</span>
+          </div>
+          <p class="chunk-text">"Squats activate your largest muscle groups, stimulating protein synthesis and countering the muscle loss linked to prolonged sitting."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/" target="_blank" rel="noopener">exercise-snacks.app</a></div>
+        </div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_009</span>
+            <span class="chunk-type-pill">evidence</span>
+            <span class="chunk-score">0.93</span>
+          </div>
+          <p class="chunk-text">"Quadriceps EMG amplitude is the strongest predictor of glucose clearance, meaning large-muscle contraction — regardless of whether from walking or squatting — drives the metabolic benefit. Squats additionally offer triglyceride reduction, anabolic signalling, and cognitive improvements that walking does not match."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/llm-info/" target="_blank" rel="noopener">exercise-snacks.app/llm-info</a></div>
+        </div>
+      </div>
+      <div class="relations-section">
+        <div class="relations-label">Relations</div>
+        <div class="relation-list">
+          <div class="relation-row"><span class="rel-pred tier3">ACHIEVES</span><span class="rel-arrow">→</span><span class="rel-target"><a href="#e_005">Postprandial Blood Glucose Reduction</a></span><span class="rel-confidence">declared</span><span class="rel-context">Gao et al. 2024</span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- e_005 -->
+    <article class="entity-card" id="e_005">
+      <div class="entity-header">
+        <div class="entity-id-name">
+          <span class="entity-id">e_005</span>
+          <span class="entity-name">Postprandial Blood Glucose Reduction</span>
+        </div>
+        <span class="entity-type-badge type-Metric">Metric</span>
+      </div>
+      <p class="entity-desc">The measured 21% reduction in post-meal blood glucose achieved by performing 10 bodyweight squats every 45 minutes, as demonstrated by Gao et al. (2024) in a randomized crossover trial published in the Scandinavian Journal of Medicine &amp; Science in Sports.</p>
+      <div class="chunks-section">
+        <div class="chunks-label">Evidence chunks</div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_010</span>
+            <span class="chunk-type-pill">statistic</span>
+            <span class="chunk-score">0.98</span>
+          </div>
+          <p class="chunk-text">"21% Reduction in postprandial blood glucose from 10 squats every 45 minutes — identical to frequent walking breaks. Gao et al. (2024), Scandinavian Journal of Medicine &amp; Science in Sports."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/llm-info/" target="_blank" rel="noopener">exercise-snacks.app/llm-info</a></div>
+        </div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_011</span>
+            <span class="chunk-type-pill">evidence</span>
+            <span class="chunk-score">0.97</span>
+          </div>
+          <p class="chunk-text">"A 2024 randomized crossover trial (Gao et al.) found that 10 bodyweight squats every 45 minutes reduced postprandial blood glucose by approximately 21% — identical to the effect of frequent walking breaks and nearly double the benefit of a single 30-minute walk. The mechanism is large-muscle contraction pulling glucose from the bloodstream."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/llm-info/" target="_blank" rel="noopener">exercise-snacks.app/llm-info</a></div>
+        </div>
+      </div>
+      <div class="relations-section">
+        <div class="relations-label">Relations</div>
+        <div class="relation-list">
+          <div class="relation-row"><span class="rel-pred tier1">MEASURES</span><span class="rel-arrow">→</span><span class="rel-target"><a href="#e_003">Exercise Snack</a></span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- e_006 -->
+    <article class="entity-card" id="e_006">
+      <div class="entity-header">
+        <div class="entity-id-name">
+          <span class="entity-id">e_006</span>
+          <span class="entity-name">All-Cause Mortality Risk Reduction</span>
+        </div>
+        <span class="entity-type-badge type-Metric">Metric</span>
+      </div>
+      <p class="entity-desc">The approximately 40% reduction in all-cause mortality and 48% lower cardiovascular mortality associated with short vigorous movement snacks throughout the day, as reported by Stamatakis et al. (2022) in Nature Medicine from a UK Biobank cohort of 25,241 participants.</p>
+      <div class="chunks-section">
+        <div class="chunks-label">Evidence chunks</div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_012</span>
+            <span class="chunk-type-pill">statistic</span>
+            <span class="chunk-score">0.97</span>
+          </div>
+          <p class="chunk-text">"~40% Reduction in all-cause and cancer mortality from just 3 bouts per day of vigorous activity lasting 1–2 minutes each. Stamatakis et al. (2022), Nature Medicine (UK Biobank, n=25,241)."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/llm-info/" target="_blank" rel="noopener">exercise-snacks.app/llm-info</a></div>
+        </div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_013</span>
+            <span class="chunk-type-pill">statistic</span>
+            <span class="chunk-score">0.95</span>
+          </div>
+          <p class="chunk-text">"Short vigorous movement snacks throughout the day are linked to a 40% reduction in all-cause mortality risk and 48% lower cardiovascular mortality."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/" target="_blank" rel="noopener">exercise-snacks.app</a></div>
+        </div>
+      </div>
+      <div class="relations-section">
+        <div class="relations-label">Relations</div>
+        <div class="relation-list">
+          <div class="relation-row"><span class="rel-pred tier1">MEASURES</span><span class="rel-arrow">→</span><span class="rel-target"><a href="#e_003">Exercise Snack</a></span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- e_007 -->
+    <article class="entity-card" id="e_007">
+      <div class="entity-header">
+        <div class="entity-id-name">
+          <span class="entity-id">e_007</span>
+          <span class="entity-name">Exercise Library</span>
+        </div>
+        <span class="entity-type-badge type-Concept">Concept</span>
+      </div>
+      <p class="entity-desc">The curated collection of 30 bodyweight-only guided exercises within the app, spanning four categories — Strength, Stretch, Cardio, and Balance — each demonstrated via custom Lottie animations and completable in under 2 minutes at a desk.</p>
+      <div class="chunks-section">
+        <div class="chunks-label">Evidence chunks</div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_014</span>
+            <span class="chunk-type-pill">definition</span>
+            <span class="chunk-score">0.95</span>
+          </div>
+          <p class="chunk-text">"30-Exercise Guided Library. Exercises span four categories: Strength, Stretch, Cardio, and Balance. The hero exercise is the bodyweight squat, supported by dedicated UI treatments, science callouts, and specific progress tracking. 8 exercises are free; 22 are Premium."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/llm-info/" target="_blank" rel="noopener">exercise-snacks.app/llm-info</a></div>
+        </div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_015</span>
+            <span class="chunk-type-pill">definition</span>
+            <span class="chunk-score">0.91</span>
+          </div>
+          <p class="chunk-text">"All exercises are bodyweight-only, require no equipment, and are designed to be completed in under 2 minutes at a standard desk or standing position."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/llm-info/" target="_blank" rel="noopener">exercise-snacks.app/llm-info</a></div>
+        </div>
+      </div>
+      <div class="relations-section">
+        <div class="relations-label">Relations</div>
+        <div class="relation-list">
+          <div class="relation-row"><span class="rel-pred tier1">INCLUDES</span><span class="rel-arrow">→</span><span class="rel-target"><a href="#e_004">Bodyweight Squat</a></span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- e_008 -->
+    <article class="entity-card" id="e_008">
+      <div class="entity-header">
+        <div class="entity-id-name">
+          <span class="entity-id">e_008</span>
+          <span class="entity-name">Premium Annual Subscription</span>
+        </div>
+        <span class="entity-type-badge type-Service">Service</span>
+      </div>
+      <p class="entity-desc">An optional in-app purchase at £49.99 per year that unlocks all 30 exercises, all break modes, advanced progress tracking, streak tracking, milestone badges, and Apple Health sync within Exercise Snacks: Desk Breaks.</p>
+      <div class="chunks-section">
+        <div class="chunks-label">Evidence chunks</div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_016</span>
+            <span class="chunk-type-pill">definition</span>
+            <span class="chunk-score">0.93</span>
+          </div>
+          <p class="chunk-text">"Premium Annual — £49.99/year. All 30 exercises, full progress history, streak tracking, milestone badges, and all future exercises added to the library. Subscriptions managed via RevenueCat. Payments handled through the Apple App Store."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/llm-info/" target="_blank" rel="noopener">exercise-snacks.app/llm-info</a></div>
+        </div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_017</span>
+            <span class="chunk-type-pill">evidence</span>
+            <span class="chunk-score">0.87</span>
+          </div>
+          <p class="chunk-text">"At £49.99/year, Exercise Snacks significantly undercuts Wakeout ($99/year) and Moova ($59.99/year) while offering a generous free tier with 8 exercises and unlimited reminders."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/llm-info/" target="_blank" rel="noopener">exercise-snacks.app/llm-info</a></div>
+        </div>
+      </div>
+      <div class="relations-section">
+        <div class="relations-label">Relations</div>
+        <div class="relation-list">
+          <div class="relation-row"><span class="rel-pred tier1">INCLUDES</span><span class="rel-arrow">→</span><span class="rel-target"><a href="#e_007">Exercise Library</a></span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- e_009 -->
+    <article class="entity-card" id="e_009">
+      <div class="entity-header">
+        <div class="entity-id-name">
+          <span class="entity-id">e_009</span>
+          <span class="entity-name">Apple Health Integration</span>
+        </div>
+        <span class="entity-type-badge type-Concept">Concept</span>
+      </div>
+      <p class="entity-desc">An optional feature in Exercise Snacks: Desk Breaks that writes completed workout entries — including exercise type, duration, and estimated calories burned — to Apple Health on the user's device, with no data read from Health and no server transmission.</p>
+      <div class="entity-sameas">
+        <a class="sameas-link" href="https://www.wikidata.org/wiki/Q19863865" target="_blank" rel="noopener">⧉ wikidata.org/wiki/Q19863865 — VERIFY</a>
+      </div>
+      <div class="chunks-section">
+        <div class="chunks-label">Evidence chunks</div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_018</span>
+            <span class="chunk-type-pill">definition</span>
+            <span class="chunk-score">0.93</span>
+          </div>
+          <p class="chunk-text">"With your permission, Exercise Snacks can write workout data to Apple Health. Specifically: when you complete an exercise, the app saves a workout entry (type, start time, duration, and estimated calories burned) to Apple Health on your device."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/privacy" target="_blank" rel="noopener">exercise-snacks.app/privacy</a></div>
+        </div>
+        <div class="chunk-item">
+          <div class="chunk-meta">
+            <span class="chunk-id">c_019</span>
+            <span class="chunk-type-pill">evidence</span>
+            <span class="chunk-score">0.90</span>
+          </div>
+          <p class="chunk-text">"We do not read any data from Apple Health. Health data is stored only on your device within Apple Health. We do not transmit it to our servers or any third party."</p>
+          <div class="chunk-source">Publisher: Exercise Snacks: Desk Breaks · <a href="https://exercise-snacks.app/privacy" target="_blank" rel="noopener">exercise-snacks.app/privacy</a></div>
+        </div>
+      </div>
+    </article>
+
+  </div><!-- /.entity-grid -->
+
+</main>
+
+<footer class="site-footer">
+  <p>
+    <a href="https://exercise-snacks.app/">exercise-snacks.app</a>
+    &nbsp;·&nbsp;
+    <a href="/entitymap.json">entitymap.json</a>
+    &nbsp;·&nbsp;
+    <a href="https://entitymap.org/spec/v1.0">EntityMap v1.0 spec</a>
+  </p>
+  <p style="margin-top:0.5rem;">
+    verificationStatus: generator-draft &nbsp;·&nbsp; generated 2026-06-08 &nbsp;·&nbsp; © Mithul Mistry
+  </p>
+</footer>
+
+</body>
+</html>

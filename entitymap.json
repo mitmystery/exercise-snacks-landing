@@ -1,0 +1,604 @@
+{
+  "version": "1.0",
+  "schema": "https://entitymap.org/spec/v1.0",
+  "publisher": {
+    "name": "Tracking Auditor",
+    "url": "https://trackingauditor.io"
+  },
+  "generated": "2026-06-08T00:00:00Z",
+  "verificationStatus": "generator-draft",
+  "profile": "core",
+  "entities": [
+    {
+      "entityId": "e_001",
+      "@type": "SoftwareProduct",
+      "name": "Tracking Auditor",
+      "description": "A web-based analytics tracking audit tool that connects to Google Tag Manager, Google Analytics 4, and optionally Google Ads via OAuth to analyse a tracking setup and generate a scored audit report exported to Google Drive.",
+      "maturityStatus": "established",
+      "audienceType": "technical",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_001",
+          "text": "Tracking Auditor is a web-based tool that connects to your Google Tag Manager, Google Analytics 4, and optionally Google Ads accounts (via Google OAuth) to analyse your tracking setup and generate a scored audit report. The report is exported to your Google Drive as a Google Doc and Google Sheet.",
+          "sourceUrl": "https://trackingauditor.io/terms",
+          "pageTitle": "Terms of Service — Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.98,
+          "contentType": "definition",
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_002",
+          "text": "Audit your GA4, GTM, and Google Ads tracking stack in minutes. Scored across consent, data quality, and conversion integrity.",
+          "sourceUrl": "https://trackingauditor.io/",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.95,
+          "contentType": "definition",
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_003",
+          "text": "Connect your GA4, GTM, and Google Ads accounts and get a scored audit like this one — with a client-ready export — in under two minutes.",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.92,
+          "contentType": "definition",
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "DEPENDS_ON",
+          "targetId": "e_009",
+          "targetName": "Google Tag Manager"
+        },
+        {
+          "predicate": "DEPENDS_ON",
+          "targetId": "e_010",
+          "targetName": "Google Analytics 4"
+        },
+        {
+          "predicate": "DEPENDS_ON",
+          "targetId": "e_014",
+          "targetName": "Google OAuth"
+        }
+      ]
+    },
+    {
+      "entityId": "e_002",
+      "@type": "Methodology",
+      "name": "Tracking Audit",
+      "description": "Tracking Auditor's named process for connecting to a GTM container, GA4 property, and optionally Google Ads account, then scoring findings across five dimensions: Consent Architecture, Cookie Classification, GTM Tag Governance, GA4 Event Quality, and Conversion Integrity.",
+      "maturityStatus": "established",
+      "audienceType": "technical",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_004",
+          "text": "Generate scored findings across consent architecture, data quality, GTM governance, event quality, and conversion integrity.",
+          "sourceUrl": "https://trackingauditor.io/privacy",
+          "pageTitle": "Privacy Policy — Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.93,
+          "contentType": "definition",
+          "audienceType": "technical"
+        },
+        {
+          "chunkId": "c_005",
+          "text": "Tracking Auditor provides automated analysis based on data available via Google APIs. Audit results are informational and may not capture every issue with your tracking setup.",
+          "sourceUrl": "https://trackingauditor.io/terms",
+          "pageTitle": "Terms of Service — Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.88,
+          "contentType": "definition",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "INCLUDES",
+          "targetId": "e_003",
+          "targetName": "Consent Architecture"
+        },
+        {
+          "predicate": "INCLUDES",
+          "targetId": "e_004",
+          "targetName": "Cookie Classification"
+        },
+        {
+          "predicate": "INCLUDES",
+          "targetId": "e_005",
+          "targetName": "GTM Tag Governance"
+        },
+        {
+          "predicate": "INCLUDES",
+          "targetId": "e_006",
+          "targetName": "GA4 Event Quality"
+        },
+        {
+          "predicate": "INCLUDES",
+          "targetId": "e_007",
+          "targetName": "Conversion Integrity"
+        },
+        {
+          "predicate": "ACHIEVES",
+          "targetId": "e_013",
+          "targetName": "Audit Report",
+          "confidence": "declared"
+        }
+      ]
+    },
+    {
+      "entityId": "e_003",
+      "@type": "Metric",
+      "name": "Consent Architecture",
+      "description": "A scored dimension in Tracking Auditor's audit that measures how well a site's consent configuration signals user choices to Google tags, including whether Consent Mode v2 is correctly implemented.",
+      "maturityStatus": "established",
+      "audienceType": "technical",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_006",
+          "text": "Consent Architecture\n\n58",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.85,
+          "contentType": "statistic",
+          "audienceType": "technical"
+        },
+        {
+          "chunkId": "c_007",
+          "text": "Consent Mode v2 is not configured — resolve the consent gap before relying on this setup for GDPR compliance",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.90,
+          "contentType": "evidence",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "MEASURES",
+          "targetId": "e_008",
+          "targetName": "Consent Mode v2"
+        }
+      ]
+    },
+    {
+      "entityId": "e_004",
+      "@type": "Metric",
+      "name": "Cookie Classification",
+      "description": "A scored dimension in Tracking Auditor's audit that assesses how cookies present on a site are categorised and disclosed relative to consent requirements.",
+      "maturityStatus": "established",
+      "audienceType": "technical",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_008",
+          "text": "Cookie Classification\n\n72",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.85,
+          "contentType": "statistic",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_005",
+      "@type": "Metric",
+      "name": "GTM Tag Governance",
+      "description": "A scored dimension in Tracking Auditor's audit that evaluates the cleanliness and quality of a Google Tag Manager container configuration, including unused triggers and legacy tags.",
+      "maturityStatus": "established",
+      "audienceType": "technical",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_009",
+          "text": "GTM Tag Governance\n\n64",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.85,
+          "contentType": "statistic",
+          "audienceType": "technical"
+        },
+        {
+          "chunkId": "c_010",
+          "text": "The GTM container has 12 triggers that are not referenced by any tag. They have no data impact but add clutter and make the container harder to audit and maintain.",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.88,
+          "contentType": "evidence",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "MEASURES",
+          "targetId": "e_009",
+          "targetName": "Google Tag Manager"
+        }
+      ]
+    },
+    {
+      "entityId": "e_006",
+      "@type": "Metric",
+      "name": "GA4 Event Quality",
+      "description": "A scored dimension in Tracking Auditor's audit that rates the accuracy and deduplication of GA4 event data, including detection of duplicate events and misconfigured Enhanced Measurement settings.",
+      "maturityStatus": "established",
+      "audienceType": "technical",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_011",
+          "text": "GA4 Event Quality\n\n45",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.85,
+          "contentType": "statistic",
+          "audienceType": "technical"
+        },
+        {
+          "chunkId": "c_012",
+          "text": "GA4 Enhanced Measurement and a GTM tag are both sending the scroll event, so every scroll is counted twice. This inflates engagement metrics and any audience or report built on scroll depth.",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.90,
+          "contentType": "evidence",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "MEASURES",
+          "targetId": "e_010",
+          "targetName": "Google Analytics 4"
+        }
+      ]
+    },
+    {
+      "entityId": "e_007",
+      "@type": "Metric",
+      "name": "Conversion Integrity",
+      "description": "A scored dimension in Tracking Auditor's audit that measures the reliability of conversion tracking data, including detection of duplicate purchase events and misconfigured Google Ads attribution settings.",
+      "maturityStatus": "established",
+      "audienceType": "technical",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_013",
+          "text": "Conversion Integrity\n\n55",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.85,
+          "contentType": "statistic",
+          "audienceType": "technical"
+        },
+        {
+          "chunkId": "c_014",
+          "text": "Your purchase event is firing twice on the order confirmation page — 34 of 412 transactions in the last 30 days were recorded as duplicates. This inflates reported revenue by roughly 8% and corrupts the conversion data that Google Ads Smart Bidding uses to optimise spend.",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.93,
+          "contentType": "evidence",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_008",
+      "@type": "Concept",
+      "name": "Consent Mode v2",
+      "description": "Google's framework for signalling a user's consent state to Google tags before they fire, enabling conversion modelling for users who decline consent and supporting GDPR compliance.",
+      "maturityStatus": "established",
+      "audienceType": "technical",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_015",
+          "text": "GA4 and Google Ads tags are not receiving consent signals from your cookie banner. Tags may fire before a visitor has granted consent, and you lose access to Google's conversion modelling that recovers data from users who decline.",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.92,
+          "contentType": "evidence",
+          "audienceType": "technical"
+        },
+        {
+          "chunkId": "c_016",
+          "text": "Implement Consent Mode v2 in GTM with a Consent Initialisation trigger, and confirm your CMP pushes default and update consent states before any tags fire.",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.90,
+          "contentType": "procedure",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "DEPENDS_ON",
+          "targetId": "e_009",
+          "targetName": "Google Tag Manager"
+        }
+      ]
+    },
+    {
+      "entityId": "e_009",
+      "@type": "SoftwareProduct",
+      "name": "Google Tag Manager",
+      "description": "Google's tag management platform, connected read-only by Tracking Auditor to fetch container configuration — tags, triggers, variables, and consent settings — for analysis.",
+      "maturityStatus": "established",
+      "audienceType": "technical",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_017",
+          "text": "Google Tag Manager (read-only) — To fetch your GTM container configuration — tags, triggers, variables, and consent settings — for analysis.",
+          "sourceUrl": "https://trackingauditor.io/privacy",
+          "pageTitle": "Privacy Policy — Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.90,
+          "contentType": "definition",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_010",
+      "@type": "SoftwareProduct",
+      "name": "Google Analytics 4",
+      "description": "Google's analytics platform, connected read-only by Tracking Auditor to fetch property configuration and run data quality checks against traffic data from the last 30 days.",
+      "maturityStatus": "established",
+      "audienceType": "technical",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_018",
+          "text": "Google Analytics (read-only) — To fetch your GA4 property configuration and run data quality checks against your traffic data from the last 30 days.",
+          "sourceUrl": "https://trackingauditor.io/privacy",
+          "pageTitle": "Privacy Policy — Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.90,
+          "contentType": "definition",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_011",
+      "@type": "SoftwareProduct",
+      "name": "Google Ads",
+      "description": "Google's advertising platform, optionally connected read-only by Tracking Auditor to audit conversion actions, campaign bidding strategies, and auto-tagging status.",
+      "maturityStatus": "established",
+      "audienceType": "technical",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_019",
+          "text": "Google Ads (read-only, optional) — To fetch your conversion actions, campaign bidding strategies, and auto-tagging status for the Ads section of the audit. Only requested if you choose to include Google Ads in your audit.",
+          "sourceUrl": "https://trackingauditor.io/privacy",
+          "pageTitle": "Privacy Policy — Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.90,
+          "contentType": "definition",
+          "audienceType": "technical"
+        },
+        {
+          "chunkId": "c_020",
+          "text": "Google Ads auto-tagging is switched off, so paid clicks arrive without a GCLID and are misattributed as 'direct' traffic in GA4. You have 3 campaigns running Target ROAS — these are bidding on incomplete attribution data, wasting budget.",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.88,
+          "contentType": "evidence",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_012",
+      "@type": "Person",
+      "name": "Mithul Mistry",
+      "description": "The individual who operates Tracking Auditor, trading under that name, and who is responsible for the service's data practices and terms.",
+      "maturityStatus": "established",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_021",
+          "text": "Tracking Auditor is operated by Mithul Mistry, trading as Tracking Auditor.",
+          "sourceUrl": "https://trackingauditor.io/privacy",
+          "pageTitle": "Privacy Policy — Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.95,
+          "contentType": "definition",
+          "audienceType": "general"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_013",
+      "@type": "Service",
+      "name": "Audit Report",
+      "description": "The client-ready output of a Tracking Auditor audit: a scored report exported to the user's Google Drive as a Google Doc and Google Sheet, containing findings, recommendations, and an action plan.",
+      "maturityStatus": "established",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_022",
+          "text": "The report is exported to your Google Drive as a Google Doc and Google Sheet.",
+          "sourceUrl": "https://trackingauditor.io/terms",
+          "pageTitle": "Terms of Service — Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.92,
+          "contentType": "definition",
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_023",
+          "text": "Audit reports generated by the Service are yours to use. You may share them with clients, include them in proposals, and use them for any lawful business purpose.",
+          "sourceUrl": "https://trackingauditor.io/terms",
+          "pageTitle": "Terms of Service — Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.90,
+          "contentType": "definition",
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_024",
+          "text": "Export to Google Doc — Export to Google Sheet — a client-ready report, generated in one click",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.88,
+          "contentType": "definition",
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "PRODUCED_BY",
+          "targetId": "e_001",
+          "targetName": "Tracking Auditor"
+        }
+      ]
+    },
+    {
+      "entityId": "e_014",
+      "@type": "Methodology",
+      "name": "Google OAuth",
+      "description": "The OAuth 2.0 authentication protocol used by Tracking Auditor to request read-only access to a user's Google Tag Manager, Google Analytics, Google Drive, and optionally Google Ads accounts.",
+      "maturityStatus": "established",
+      "audienceType": "technical",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_025",
+          "text": "Tracking Auditor connects to your Google account using OAuth 2.0. We request the following permissions and use them solely to generate your tracking audit report.",
+          "sourceUrl": "https://trackingauditor.io/privacy",
+          "pageTitle": "Privacy Policy — Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.93,
+          "contentType": "definition",
+          "audienceType": "technical"
+        },
+        {
+          "chunkId": "c_026",
+          "text": "OAuth tokens are stored in an encrypted session cookie in your browser for the duration of your session. Tokens are used to make API calls on your behalf and are not retained on our servers beyond the active session.",
+          "sourceUrl": "https://trackingauditor.io/privacy",
+          "pageTitle": "Privacy Policy — Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.88,
+          "contentType": "evidence",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "ENABLES",
+          "targetId": "e_002",
+          "targetName": "Tracking Audit"
+        }
+      ]
+    },
+    {
+      "entityId": "e_015",
+      "@type": "Concept",
+      "name": "Duplicate Purchase Event",
+      "description": "A tracking error where a GA4 purchase event fires more than once per transaction on the order confirmation page, inflating reported revenue and corrupting the conversion data used by Google Ads Smart Bidding.",
+      "maturityStatus": "established",
+      "audienceType": "technical",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_027",
+          "text": "Your purchase event is firing twice on the order confirmation page — 34 of 412 transactions in the last 30 days were recorded as duplicates. This inflates reported revenue by roughly 8% and corrupts the conversion data that Google Ads Smart Bidding uses to optimise spend.",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.95,
+          "contentType": "evidence",
+          "audienceType": "technical"
+        },
+        {
+          "chunkId": "c_028",
+          "text": "Add a transaction_id-based deduplication check, or move the purchase tag onto a single trigger that fires once per completed order. Verify in GA4 DebugView that purchase fires exactly once per transaction.",
+          "sourceUrl": "https://trackingauditor.io/sample-report",
+          "pageTitle": "Tracking Auditor",
+          "publisher": "Tracking Auditor",
+          "retrieved": "2026-06-08T08:00:00Z",
+          "relevanceScore": 0.90,
+          "contentType": "procedure",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "DEGRADES",
+          "targetId": "e_007",
+          "targetName": "Conversion Integrity",
+          "confidence": "declared",
+          "context": {
+            "condition": "when a purchase tag fires more than once per transaction"
+          }
+        },
+        {
+          "predicate": "DEGRADES",
+          "targetId": "e_006",
+          "targetName": "GA4 Event Quality",
+          "confidence": "declared",
+          "context": {
+            "condition": "duplicate event firing inflates reported revenue and event counts"
+          }
+        }
+      ]
+    }
+  ]
+}
