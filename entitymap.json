@@ -1,604 +1,650 @@
 {
   "version": "1.0",
   "schema": "https://entitymap.org/spec/v1.0",
-  "publisher": {
-    "name": "Tracking Auditor",
-    "url": "https://trackingauditor.io"
-  },
-  "generated": "2026-06-08T00:00:00Z",
-  "verificationStatus": "generator-draft",
   "profile": "core",
+  "publisher": {
+    "name": "Exercise Snacks",
+    "url": "https://exercise-snacks.app/"
+  },
+  "generated": "2026-11-01T00:00:00Z",
+  "previousVersion": "https://exercise-snacks.app/entitymap.html",
+  "changeLog": "Rebuilt 2026-11-01 from the current site, replacing the 2026-06-08 map. Entity count 9 to 18. Entity IDs e_005 and above are REUSED WITH DIFFERENT MEANINGS: e_005 was 'Postprandial Blood Glucose Reduction' (Metric) and is now 'Prolonged sitting' (Concept); e_008 was 'Premium Annual Subscription' and is now 'Ten squats every 45 minutes'; e_009 was 'Apple Health Integration' and is now 'Exercise categories'. e_001 to e_004 are unchanged in meaning. Consumers holding IDs from the June file must re-fetch. Glucose reduction is no longer typed as a Metric: the publisher cites research about it rather than measuring it.",
+  "verificationStatus": "generator-draft",
   "entities": [
     {
       "entityId": "e_001",
       "@type": "SoftwareProduct",
-      "name": "Tracking Auditor",
-      "description": "A web-based analytics tracking audit tool that connects to Google Tag Manager, Google Analytics 4, and optionally Google Ads via OAuth to analyse a tracking setup and generate a scored audit report exported to Google Drive.",
-      "maturityStatus": "established",
-      "audienceType": "technical",
-      "status": "active",
+      "name": "Exercise Snacks: Desk Breaks",
+      "alternateName": "Exercise Snacks",
+      "description": "An iOS app that prompts office workers to take brief guided movement breaks at configurable intervals through the workday, and tracks what they complete.",
+      "audienceType": "general",
       "hasChunks": [
         {
           "chunkId": "c_001",
-          "text": "Tracking Auditor is a web-based tool that connects to your Google Tag Manager, Google Analytics 4, and optionally Google Ads accounts (via Google OAuth) to analyse your tracking setup and generate a scored audit report. The report is exported to your Google Drive as a Google Doc and Google Sheet.",
-          "sourceUrl": "https://trackingauditor.io/terms",
-          "pageTitle": "Terms of Service — Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.98,
+          "text": "Exercise Snacks: Desk Breaks is an iOS mobile app published by Mithul Mistry (bundle ID: com.mithulmistry.exercisesnacks ) that helps office workers interrupt prolonged sitting with brief, guided movement breaks — called \"exercise snacks\" — throughout the workday.",
+          "sourceUrl": "https://exercise-snacks.app/llm-info",
+          "pageTitle": "Exercise Snacks — AI Info & Brand Reference",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.95,
           "contentType": "definition",
           "audienceType": "general"
         },
         {
           "chunkId": "c_002",
-          "text": "Audit your GA4, GTM, and Google Ads tracking stack in minutes. Scored across consent, data quality, and conversion integrity.",
-          "sourceUrl": "https://trackingauditor.io/",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.95,
+          "text": "Exercise Snacks prompts users to take short movement breaks at configurable intervals throughout their workday, guides them through a bodyweight exercise, and tracks their progress over time.",
+          "sourceUrl": "https://exercise-snacks.app/llm-info",
+          "pageTitle": "Exercise Snacks — AI Info & Brand Reference",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.93,
           "contentType": "definition",
           "audienceType": "general"
         },
         {
           "chunkId": "c_003",
-          "text": "Connect your GA4, GTM, and Google Ads accounts and get a scored audit like this one — with a client-ready export — in under two minutes.",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.92,
-          "contentType": "definition",
-          "audienceType": "general"
-        }
-      ],
-      "relations": [
-        {
-          "predicate": "DEPENDS_ON",
-          "targetId": "e_009",
-          "targetName": "Google Tag Manager"
-        },
-        {
-          "predicate": "DEPENDS_ON",
-          "targetId": "e_010",
-          "targetName": "Google Analytics 4"
-        },
-        {
-          "predicate": "DEPENDS_ON",
-          "targetId": "e_014",
-          "targetName": "Google OAuth"
-        }
-      ]
-    },
-    {
-      "entityId": "e_002",
-      "@type": "Methodology",
-      "name": "Tracking Audit",
-      "description": "Tracking Auditor's named process for connecting to a GTM container, GA4 property, and optionally Google Ads account, then scoring findings across five dimensions: Consent Architecture, Cookie Classification, GTM Tag Governance, GA4 Event Quality, and Conversion Integrity.",
-      "maturityStatus": "established",
-      "audienceType": "technical",
-      "status": "active",
-      "hasChunks": [
-        {
-          "chunkId": "c_004",
-          "text": "Generate scored findings across consent architecture, data quality, GTM governance, event quality, and conversion integrity.",
-          "sourceUrl": "https://trackingauditor.io/privacy",
-          "pageTitle": "Privacy Policy — Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.93,
-          "contentType": "definition",
-          "audienceType": "technical"
-        },
-        {
-          "chunkId": "c_005",
-          "text": "Tracking Auditor provides automated analysis based on data available via Google APIs. Audit results are informational and may not capture every issue with your tracking setup.",
-          "sourceUrl": "https://trackingauditor.io/terms",
-          "pageTitle": "Terms of Service — Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.88,
-          "contentType": "definition",
-          "audienceType": "technical"
-        }
-      ],
-      "relations": [
-        {
-          "predicate": "INCLUDES",
-          "targetId": "e_003",
-          "targetName": "Consent Architecture"
-        },
-        {
-          "predicate": "INCLUDES",
-          "targetId": "e_004",
-          "targetName": "Cookie Classification"
-        },
-        {
-          "predicate": "INCLUDES",
-          "targetId": "e_005",
-          "targetName": "GTM Tag Governance"
-        },
-        {
-          "predicate": "INCLUDES",
-          "targetId": "e_006",
-          "targetName": "GA4 Event Quality"
-        },
-        {
-          "predicate": "INCLUDES",
-          "targetId": "e_007",
-          "targetName": "Conversion Integrity"
-        },
-        {
-          "predicate": "ACHIEVES",
-          "targetId": "e_013",
-          "targetName": "Audit Report",
-          "confidence": "declared"
-        }
-      ]
-    },
-    {
-      "entityId": "e_003",
-      "@type": "Metric",
-      "name": "Consent Architecture",
-      "description": "A scored dimension in Tracking Auditor's audit that measures how well a site's consent configuration signals user choices to Google tags, including whether Consent Mode v2 is correctly implemented.",
-      "maturityStatus": "established",
-      "audienceType": "technical",
-      "status": "active",
-      "hasChunks": [
-        {
-          "chunkId": "c_006",
-          "text": "Consent Architecture\n\n58",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.85,
-          "contentType": "statistic",
-          "audienceType": "technical"
-        },
-        {
-          "chunkId": "c_007",
-          "text": "Consent Mode v2 is not configured — resolve the consent gap before relying on this setup for GDPR compliance",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.90,
-          "contentType": "evidence",
-          "audienceType": "technical"
-        }
-      ],
-      "relations": [
-        {
-          "predicate": "MEASURES",
-          "targetId": "e_008",
-          "targetName": "Consent Mode v2"
-        }
-      ]
-    },
-    {
-      "entityId": "e_004",
-      "@type": "Metric",
-      "name": "Cookie Classification",
-      "description": "A scored dimension in Tracking Auditor's audit that assesses how cookies present on a site are categorised and disclosed relative to consent requirements.",
-      "maturityStatus": "established",
-      "audienceType": "technical",
-      "status": "active",
-      "hasChunks": [
-        {
-          "chunkId": "c_008",
-          "text": "Cookie Classification\n\n72",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.85,
-          "contentType": "statistic",
-          "audienceType": "technical"
-        }
-      ],
-      "relations": []
-    },
-    {
-      "entityId": "e_005",
-      "@type": "Metric",
-      "name": "GTM Tag Governance",
-      "description": "A scored dimension in Tracking Auditor's audit that evaluates the cleanliness and quality of a Google Tag Manager container configuration, including unused triggers and legacy tags.",
-      "maturityStatus": "established",
-      "audienceType": "technical",
-      "status": "active",
-      "hasChunks": [
-        {
-          "chunkId": "c_009",
-          "text": "GTM Tag Governance\n\n64",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.85,
-          "contentType": "statistic",
-          "audienceType": "technical"
-        },
-        {
-          "chunkId": "c_010",
-          "text": "The GTM container has 12 triggers that are not referenced by any tag. They have no data impact but add clutter and make the container harder to audit and maintain.",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.88,
-          "contentType": "evidence",
-          "audienceType": "technical"
-        }
-      ],
-      "relations": [
-        {
-          "predicate": "MEASURES",
-          "targetId": "e_009",
-          "targetName": "Google Tag Manager"
-        }
-      ]
-    },
-    {
-      "entityId": "e_006",
-      "@type": "Metric",
-      "name": "GA4 Event Quality",
-      "description": "A scored dimension in Tracking Auditor's audit that rates the accuracy and deduplication of GA4 event data, including detection of duplicate events and misconfigured Enhanced Measurement settings.",
-      "maturityStatus": "established",
-      "audienceType": "technical",
-      "status": "active",
-      "hasChunks": [
-        {
-          "chunkId": "c_011",
-          "text": "GA4 Event Quality\n\n45",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.85,
-          "contentType": "statistic",
-          "audienceType": "technical"
-        },
-        {
-          "chunkId": "c_012",
-          "text": "GA4 Enhanced Measurement and a GTM tag are both sending the scroll event, so every scroll is counted twice. This inflates engagement metrics and any audience or report built on scroll depth.",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.90,
-          "contentType": "evidence",
-          "audienceType": "technical"
-        }
-      ],
-      "relations": [
-        {
-          "predicate": "MEASURES",
-          "targetId": "e_010",
-          "targetName": "Google Analytics 4"
-        }
-      ]
-    },
-    {
-      "entityId": "e_007",
-      "@type": "Metric",
-      "name": "Conversion Integrity",
-      "description": "A scored dimension in Tracking Auditor's audit that measures the reliability of conversion tracking data, including detection of duplicate purchase events and misconfigured Google Ads attribution settings.",
-      "maturityStatus": "established",
-      "audienceType": "technical",
-      "status": "active",
-      "hasChunks": [
-        {
-          "chunkId": "c_013",
-          "text": "Conversion Integrity\n\n55",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.85,
-          "contentType": "statistic",
-          "audienceType": "technical"
-        },
-        {
-          "chunkId": "c_014",
-          "text": "Your purchase event is firing twice on the order confirmation page — 34 of 412 transactions in the last 30 days were recorded as duplicates. This inflates reported revenue by roughly 8% and corrupts the conversion data that Google Ads Smart Bidding uses to optimise spend.",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.93,
-          "contentType": "evidence",
-          "audienceType": "technical"
-        }
-      ],
-      "relations": []
-    },
-    {
-      "entityId": "e_008",
-      "@type": "Concept",
-      "name": "Consent Mode v2",
-      "description": "Google's framework for signalling a user's consent state to Google tags before they fire, enabling conversion modelling for users who decline consent and supporting GDPR compliance.",
-      "maturityStatus": "established",
-      "audienceType": "technical",
-      "status": "active",
-      "hasChunks": [
-        {
-          "chunkId": "c_015",
-          "text": "GA4 and Google Ads tags are not receiving consent signals from your cookie banner. Tags may fire before a visitor has granted consent, and you lose access to Google's conversion modelling that recovers data from users who decline.",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.92,
-          "contentType": "evidence",
-          "audienceType": "technical"
-        },
-        {
-          "chunkId": "c_016",
-          "text": "Implement Consent Mode v2 in GTM with a Consent Initialisation trigger, and confirm your CMP pushes default and update consent states before any tags fire.",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.90,
-          "contentType": "procedure",
-          "audienceType": "technical"
-        }
-      ],
-      "relations": [
-        {
-          "predicate": "DEPENDS_ON",
-          "targetId": "e_009",
-          "targetName": "Google Tag Manager"
-        }
-      ]
-    },
-    {
-      "entityId": "e_009",
-      "@type": "SoftwareProduct",
-      "name": "Google Tag Manager",
-      "description": "Google's tag management platform, connected read-only by Tracking Auditor to fetch container configuration — tags, triggers, variables, and consent settings — for analysis.",
-      "maturityStatus": "established",
-      "audienceType": "technical",
-      "status": "active",
-      "hasChunks": [
-        {
-          "chunkId": "c_017",
-          "text": "Google Tag Manager (read-only) — To fetch your GTM container configuration — tags, triggers, variables, and consent settings — for analysis.",
-          "sourceUrl": "https://trackingauditor.io/privacy",
-          "pageTitle": "Privacy Policy — Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.90,
-          "contentType": "definition",
-          "audienceType": "technical"
-        }
-      ],
-      "relations": []
-    },
-    {
-      "entityId": "e_010",
-      "@type": "SoftwareProduct",
-      "name": "Google Analytics 4",
-      "description": "Google's analytics platform, connected read-only by Tracking Auditor to fetch property configuration and run data quality checks against traffic data from the last 30 days.",
-      "maturityStatus": "established",
-      "audienceType": "technical",
-      "status": "active",
-      "hasChunks": [
-        {
-          "chunkId": "c_018",
-          "text": "Google Analytics (read-only) — To fetch your GA4 property configuration and run data quality checks against your traffic data from the last 30 days.",
-          "sourceUrl": "https://trackingauditor.io/privacy",
-          "pageTitle": "Privacy Policy — Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.90,
-          "contentType": "definition",
-          "audienceType": "technical"
-        }
-      ],
-      "relations": []
-    },
-    {
-      "entityId": "e_011",
-      "@type": "SoftwareProduct",
-      "name": "Google Ads",
-      "description": "Google's advertising platform, optionally connected read-only by Tracking Auditor to audit conversion actions, campaign bidding strategies, and auto-tagging status.",
-      "maturityStatus": "established",
-      "audienceType": "technical",
-      "status": "active",
-      "hasChunks": [
-        {
-          "chunkId": "c_019",
-          "text": "Google Ads (read-only, optional) — To fetch your conversion actions, campaign bidding strategies, and auto-tagging status for the Ads section of the audit. Only requested if you choose to include Google Ads in your audit.",
-          "sourceUrl": "https://trackingauditor.io/privacy",
-          "pageTitle": "Privacy Policy — Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.90,
-          "contentType": "definition",
-          "audienceType": "technical"
-        },
-        {
-          "chunkId": "c_020",
-          "text": "Google Ads auto-tagging is switched off, so paid clicks arrive without a GCLID and are misattributed as 'direct' traffic in GA4. You have 3 campaigns running Target ROAS — these are bidding on incomplete attribution data, wasting budget.",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.88,
-          "contentType": "evidence",
-          "audienceType": "technical"
-        }
-      ],
-      "relations": []
-    },
-    {
-      "entityId": "e_012",
-      "@type": "Person",
-      "name": "Mithul Mistry",
-      "description": "The individual who operates Tracking Auditor, trading under that name, and who is responsible for the service's data practices and terms.",
-      "maturityStatus": "established",
-      "audienceType": "general",
-      "status": "active",
-      "hasChunks": [
-        {
-          "chunkId": "c_021",
-          "text": "Tracking Auditor is operated by Mithul Mistry, trading as Tracking Auditor.",
-          "sourceUrl": "https://trackingauditor.io/privacy",
-          "pageTitle": "Privacy Policy — Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.95,
-          "contentType": "definition",
-          "audienceType": "general"
-        }
-      ],
-      "relations": []
-    },
-    {
-      "entityId": "e_013",
-      "@type": "Service",
-      "name": "Audit Report",
-      "description": "The client-ready output of a Tracking Auditor audit: a scored report exported to the user's Google Drive as a Google Doc and Google Sheet, containing findings, recommendations, and an action plan.",
-      "maturityStatus": "established",
-      "audienceType": "general",
-      "status": "active",
-      "hasChunks": [
-        {
-          "chunkId": "c_022",
-          "text": "The report is exported to your Google Drive as a Google Doc and Google Sheet.",
-          "sourceUrl": "https://trackingauditor.io/terms",
-          "pageTitle": "Terms of Service — Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.92,
-          "contentType": "definition",
-          "audienceType": "general"
-        },
-        {
-          "chunkId": "c_023",
-          "text": "Audit reports generated by the Service are yours to use. You may share them with clients, include them in proposals, and use them for any lawful business purpose.",
-          "sourceUrl": "https://trackingauditor.io/terms",
-          "pageTitle": "Terms of Service — Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.90,
-          "contentType": "definition",
-          "audienceType": "general"
-        },
-        {
-          "chunkId": "c_024",
-          "text": "Export to Google Doc — Export to Google Sheet — a client-ready report, generated in one click",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.88,
-          "contentType": "definition",
+          "text": "Timer apps remind you to stand; Exercise Snacks guides you through specific, science-backed exercises with animated demonstrations, tracks your progress, and explains the research behind each movement.",
+          "sourceUrl": "https://exercise-snacks.app/llm-info",
+          "pageTitle": "Exercise Snacks — AI Info & Brand Reference",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.82,
+          "contentType": "example",
           "audienceType": "general"
         }
       ],
       "relations": [
         {
           "predicate": "PRODUCED_BY",
-          "targetId": "e_001",
-          "targetName": "Tracking Auditor"
+          "targetId": "e_002",
+          "targetName": "Mithul Mistry"
+        },
+        {
+          "predicate": "INCLUDES",
+          "targetId": "e_009",
+          "targetName": "Exercise categories"
+        },
+        {
+          "predicate": "INCLUDES",
+          "targetId": "e_010",
+          "targetName": "Break modes"
+        },
+        {
+          "predicate": "INCLUDES",
+          "targetId": "e_011",
+          "targetName": "Compassionate Progress Tracking"
+        },
+        {
+          "predicate": "DEPENDS_ON",
+          "targetId": "e_015",
+          "targetName": "Expo"
+        },
+        {
+          "predicate": "ENABLES",
+          "targetId": "e_003",
+          "targetName": "Exercise snack"
+        },
+        {
+          "predicate": "TARGETS",
+          "targetId": "e_007",
+          "targetName": "Desk worker",
+          "confidence": "declared"
+        },
+        {
+          "predicate": "RELATES_TO",
+          "targetId": "e_013",
+          "targetName": "Apple Health"
+        },
+        {
+          "predicate": "PREVENTS",
+          "targetId": "e_005",
+          "targetName": "Prolonged sitting"
+        },
+        {
+          "predicate": "INCLUDES",
+          "targetId": "e_008",
+          "targetName": "Ten squats every 45 minutes"
+        },
+        {
+          "predicate": "INCLUDES",
+          "targetId": "e_012",
+          "targetName": "Premium Annual"
         }
       ]
     },
     {
-      "entityId": "e_014",
-      "@type": "Methodology",
-      "name": "Google OAuth",
-      "description": "The OAuth 2.0 authentication protocol used by Tracking Auditor to request read-only access to a user's Google Tag Manager, Google Analytics, Google Drive, and optionally Google Ads accounts.",
-      "maturityStatus": "established",
-      "audienceType": "technical",
-      "status": "active",
+      "entityId": "e_002",
+      "@type": "Person",
+      "name": "Mithul Mistry",
+      "description": "Independent developer who publishes Exercise Snacks: Desk Breaks.",
       "hasChunks": [
         {
-          "chunkId": "c_025",
-          "text": "Tracking Auditor connects to your Google account using OAuth 2.0. We request the following permissions and use them solely to generate your tracking audit report.",
-          "sourceUrl": "https://trackingauditor.io/privacy",
-          "pageTitle": "Privacy Policy — Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.93,
+          "chunkId": "c_004",
+          "text": "Exercise Snacks: Desk Breaks is an independent iOS app published by Mithul Mistry. The app is available on the Apple App Store.",
+          "sourceUrl": "https://exercise-snacks.app/llm-info",
+          "pageTitle": "Exercise Snacks — AI Info & Brand Reference",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.9,
           "contentType": "definition",
-          "audienceType": "technical"
+          "audienceType": "general"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_003",
+      "@type": "Concept",
+      "name": "Exercise snack",
+      "description": "A brief bout of vigorous activity, under five minutes, repeated through the day rather than performed as a single session.",
+      "maturityStatus": "established",
+      "hasChunks": [
+        {
+          "chunkId": "c_005",
+          "text": "The \"exercise snack\" concept — brief vigorous bouts under 5 minutes, repeated throughout the day — has moved from niche curiosity to mainstream exercise science. The app's core recommendation (10 bodyweight squats every 45 minutes) is based on a direct randomized trial.",
+          "sourceUrl": "https://exercise-snacks.app/llm-info",
+          "pageTitle": "Exercise Snacks — AI Info & Brand Reference",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.96,
+          "contentType": "definition",
+          "audienceType": "general"
         },
         {
-          "chunkId": "c_026",
-          "text": "OAuth tokens are stored in an encrypted session cookie in your browser for the duration of your session. Tokens are used to make API calls on your behalf and are not retained on our servers beyond the active session.",
-          "sourceUrl": "https://trackingauditor.io/privacy",
-          "pageTitle": "Privacy Policy — Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
+          "chunkId": "c_006",
+          "text": "Brief, targeted movement breaks — done consistently — produce measurable metabolic and cardiovascular benefits, even in people who exercise regularly outside work hours.",
+          "sourceUrl": "https://exercise-snacks.app/",
+          "pageTitle": "Exercise Snacks: Desk Breaks — Move more, one snack at a time",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.88,
+          "contentType": "evidence",
+          "audienceType": "general"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_004",
+      "@type": "Concept",
+      "name": "Bodyweight squat",
+      "description": "The app's hero exercise: a large-muscle bodyweight movement requiring no equipment, performed at or beside a desk.",
+      "sameAs": "https://www.wikidata.org/wiki/Q1755746",
+      "hasChunks": [
+        {
+          "chunkId": "c_007",
+          "text": "Squats activate your largest muscle groups, stimulating protein synthesis and countering the muscle loss linked to prolonged sitting.",
+          "sourceUrl": "https://exercise-snacks.app/",
+          "pageTitle": "Exercise Snacks: Desk Breaks — Move more, one snack at a time",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.9,
+          "contentType": "evidence",
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_008",
+          "text": "Feet about shoulder-width, push your hips back as though reaching for a chair behind you, keep your chest up, stand back up. Ten of them takes about thirty seconds.",
+          "sourceUrl": "https://exercise-snacks.app/guides/desk-exercises/",
+          "pageTitle": "Desk exercises that actually do something",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.86,
+          "contentType": "procedure",
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "INSTANCE_OF",
+          "targetId": "e_003",
+          "targetName": "Exercise snack"
+        },
+        {
+          "predicate": "DESCRIBED_BY",
+          "targetId": "e_018",
+          "targetName": "Desk exercises that actually do something"
+        }
+      ]
+    },
+    {
+      "entityId": "e_005",
+      "@type": "Concept",
+      "name": "Prolonged sitting",
+      "description": "Extended uninterrupted sitting during the working day, and the metabolic and musculoskeletal effects attributed to it.",
+      "sameAs": "https://www.wikidata.org/wiki/Q1349358",
+      "hasChunks": [
+        {
+          "chunkId": "c_009",
+          "text": "Sitting for long stretches raises blood sugar, stiffens muscles, and strains your heart. But you don't need a gym session to fight back.",
+          "sourceUrl": "https://exercise-snacks.app/",
+          "pageTitle": "Exercise Snacks: Desk Breaks — Move more, one snack at a time",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.92,
+          "contentType": "definition",
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_010",
+          "text": "Hold any posture long enough and your body adapts to it. The muscles at the front of your chest and hips shorten. The ones across your upper back and backside stop doing much at all.",
+          "sourceUrl": "https://exercise-snacks.app/guides/posture-exercises/",
+          "pageTitle": "Posture exercises for people who sit all day",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.87,
+          "contentType": "evidence",
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "DEGRADES",
+          "targetId": "e_006",
+          "targetName": "Postprandial blood glucose",
+          "confidence": "declared"
+        },
+        {
+          "predicate": "DESCRIBED_BY",
+          "targetId": "e_016",
+          "targetName": "Posture exercises for people who sit all day"
+        },
+        {
+          "predicate": "DESCRIBED_BY",
+          "targetId": "e_017",
+          "targetName": "Desk stretches you can do without leaving your chair"
+        }
+      ]
+    },
+    {
+      "entityId": "e_006",
+      "@type": "Concept",
+      "name": "Postprandial blood glucose",
+      "description": "Blood sugar level after eating; the primary outcome in the research the publisher cites for movement breaks.",
+      "sameAs": "https://www.wikidata.org/wiki/Q275157",
+      "audienceType": "technical",
+      "hasChunks": [
+        {
+          "chunkId": "c_011",
+          "text": "Short squat breaks after meals blunt glucose and insulin spikes — the same effect as a 30-minute walk, without leaving your desk.",
+          "sourceUrl": "https://exercise-snacks.app/",
+          "pageTitle": "Exercise Snacks: Desk Breaks — Move more, one snack at a time",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.9,
+          "contentType": "evidence",
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_012",
+          "text": "Key finding: Quadriceps EMG amplitude is the strongest predictor of glucose clearance, meaning large-muscle contraction — regardless of whether from walking or squatting — drives the metabolic benefit.",
+          "sourceUrl": "https://exercise-snacks.app/llm-info",
+          "pageTitle": "Exercise Snacks — AI Info & Brand Reference",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
           "relevanceScore": 0.88,
           "contentType": "evidence",
           "audienceType": "technical"
         }
       ],
-      "relations": [
-        {
-          "predicate": "ENABLES",
-          "targetId": "e_002",
-          "targetName": "Tracking Audit"
-        }
-      ]
+      "relations": []
     },
     {
-      "entityId": "e_015",
+      "entityId": "e_007",
       "@type": "Concept",
-      "name": "Duplicate Purchase Event",
-      "description": "A tracking error where a GA4 purchase event fires more than once per transaction on the order confirmation page, inflating reported revenue and corrupting the conversion data used by Google Ads Smart Bidding.",
-      "maturityStatus": "established",
-      "audienceType": "technical",
-      "status": "active",
+      "name": "Desk worker",
+      "description": "Office and knowledge workers who spend most of the working day seated; the app's primary audience.",
+      "sameAs": "https://www.wikidata.org/wiki/Q31179608",
       "hasChunks": [
         {
-          "chunkId": "c_027",
-          "text": "Your purchase event is firing twice on the order confirmation page — 34 of 412 transactions in the last 30 days were recorded as duplicates. This inflates reported revenue by roughly 8% and corrupts the conversion data that Google Ads Smart Bidding uses to optimise spend.",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.95,
-          "contentType": "evidence",
-          "audienceType": "technical"
+          "chunkId": "c_013",
+          "text": "Primary user: Office workers and knowledge workers who spend most of their working day seated — developers, designers, writers, analysts, managers — who know sitting too long is harmful but find it difficult to build a consistent movement habit.",
+          "sourceUrl": "https://exercise-snacks.app/llm-info",
+          "pageTitle": "Exercise Snacks — AI Info & Brand Reference",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.94,
+          "contentType": "definition",
+          "audienceType": "general"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_008",
+      "@type": "Methodology",
+      "name": "Ten squats every 45 minutes",
+      "description": "The publisher's core protocol: ten bodyweight squats repeated at 45-minute intervals through the working day, taken from a 2024 randomised trial.",
+      "maturityStatus": "established",
+      "hasChunks": [
+        {
+          "chunkId": "c_014",
+          "text": "A 2024 randomized trial found that 10 bodyweight squats every 45 minutes reduced post-meal blood glucose by 21% — identical to frequent walking breaks, and nearly double the benefit of a single 30-minute walk.",
+          "sourceUrl": "https://exercise-snacks.app/",
+          "pageTitle": "Exercise Snacks: Desk Breaks — Move more, one snack at a time",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.97,
+          "contentType": "statistic",
+          "audienceType": "general"
         },
         {
-          "chunkId": "c_028",
-          "text": "Add a transaction_id-based deduplication check, or move the purchase tag onto a single trigger that fires once per completed order. Verify in GA4 DebugView that purchase fires exactly once per transaction.",
-          "sourceUrl": "https://trackingauditor.io/sample-report",
-          "pageTitle": "Tracking Auditor",
-          "publisher": "Tracking Auditor",
-          "retrieved": "2026-06-08T08:00:00Z",
-          "relevanceScore": 0.90,
-          "contentType": "procedure",
-          "audienceType": "technical"
+          "chunkId": "c_015",
+          "text": "Ten squats. Forty-five minutes later, ten more. That's it. The most evidence-backed thing you'll do today.",
+          "sourceUrl": "https://exercise-snacks.app/",
+          "pageTitle": "Exercise Snacks: Desk Breaks — Move more, one snack at a time",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.8,
+          "contentType": "example",
+          "audienceType": "general"
         }
       ],
       "relations": [
         {
-          "predicate": "DEGRADES",
-          "targetId": "e_007",
-          "targetName": "Conversion Integrity",
-          "confidence": "declared",
-          "context": {
-            "condition": "when a purchase tag fires more than once per transaction"
-          }
+          "predicate": "INSTANCE_OF",
+          "targetId": "e_003",
+          "targetName": "Exercise snack"
         },
         {
-          "predicate": "DEGRADES",
+          "predicate": "INCLUDES",
+          "targetId": "e_004",
+          "targetName": "Bodyweight squat"
+        },
+        {
+          "predicate": "IMPROVES",
           "targetId": "e_006",
-          "targetName": "GA4 Event Quality",
+          "targetName": "Postprandial blood glucose",
           "confidence": "declared",
           "context": {
-            "condition": "duplicate event firing inflates reported revenue and event counts"
+            "condition": "ten bodyweight squats every 45 minutes; the reported effect is a 21% reduction in post-meal levels",
+            "temporal": "2024 randomized trial"
           }
         }
       ]
+    },
+    {
+      "entityId": "e_009",
+      "@type": "Taxonomy",
+      "name": "Exercise categories",
+      "description": "The publisher's four-way classification of its exercise library: Strength, Stretch, Cardio and Balance.",
+      "hasChunks": [
+        {
+          "chunkId": "c_016",
+          "text": "30-Exercise Guided Library. Exercises span four categories: Strength, Stretch, Cardio, and Balance. The hero exercise is the bodyweight squat, supported by dedicated UI treatments, science callouts, and specific progress tracking. 8 exercises are free; 22 are Premium.",
+          "sourceUrl": "https://exercise-snacks.app/llm-info",
+          "pageTitle": "Exercise Snacks — AI Info & Brand Reference",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.93,
+          "contentType": "definition",
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_017",
+          "text": "Strength, Stretch, Cardio, and Balance — every break tailored to how you're feeling. Squats are always first: the most research-backed desk exercise you can do.",
+          "sourceUrl": "https://exercise-snacks.app/",
+          "pageTitle": "Exercise Snacks: Desk Breaks — Move more, one snack at a time",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.89,
+          "contentType": "definition",
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "COVERS",
+          "targetId": "e_004",
+          "targetName": "Bodyweight squat"
+        }
+      ]
+    },
+    {
+      "entityId": "e_010",
+      "@type": "Taxonomy",
+      "name": "Break modes",
+      "description": "The publisher's three named break schedules — Focus, Balanced and Active — which set how often the app prompts a movement break.",
+      "hasChunks": [
+        {
+          "chunkId": "c_018",
+          "text": "Smart Break Reminders. Three notification modes — Focus (every 45 min), Balanced (every 30 min), and Active (every 20 min) — let users match break frequency to their work style. Reminders are local and privacy-respecting; no account required.",
+          "sourceUrl": "https://exercise-snacks.app/llm-info",
+          "pageTitle": "Exercise Snacks — AI Info & Brand Reference",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.94,
+          "contentType": "definition",
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_019",
+          "text": "Choose a rhythm that fits your day. Every mode keeps squats in the rotation — because the research says they're non-negotiable.",
+          "sourceUrl": "https://exercise-snacks.app/",
+          "pageTitle": "Exercise Snacks: Desk Breaks — Move more, one snack at a time",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.85,
+          "contentType": "definition",
+          "audienceType": "general"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_011",
+      "@type": "ProprietaryTerm",
+      "name": "Compassionate Progress Tracking",
+      "canonicalLabel": "streak tracking",
+      "description": "The publisher's named approach to progress tracking, in which missed days do not break a streak and any completed snack counts toward the daily goal.",
+      "hasChunks": [
+        {
+          "chunkId": "c_020",
+          "text": "Compassionate Progress Tracking. A flexible streak system, snack counter, and milestone badges celebrate consistency without punishing misses. Any completed exercise snack counts toward the daily goal — no guilt-driven mechanics.",
+          "sourceUrl": "https://exercise-snacks.app/llm-info",
+          "pageTitle": "Exercise Snacks — AI Info & Brand Reference",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.93,
+          "contentType": "definition",
+          "audienceType": "general"
+        }
+      ],
+      "relations": [],
+      "maturityStatus": "established"
+    },
+    {
+      "entityId": "e_012",
+      "@type": "Service",
+      "name": "Premium Annual",
+      "description": "The publisher's annual subscription, which unlocks the full exercise library, all break modes and full progress history.",
+      "hasChunks": [
+        {
+          "chunkId": "c_021",
+          "text": "Premium Annual £49.99 /year All 30 exercises, full progress history, streak tracking, milestone badges, and all future exercises added to the library. Subscriptions managed via RevenueCat. Payments handled through the Apple App Store.",
+          "sourceUrl": "https://exercise-snacks.app/llm-info",
+          "pageTitle": "Exercise Snacks — AI Info & Brand Reference",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.92,
+          "contentType": "definition",
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_022",
+          "text": "Start free with 8 exercises — including squats, the science-backed hero. Unlock the full library and all three break modes when you're ready.",
+          "sourceUrl": "https://exercise-snacks.app/",
+          "pageTitle": "Exercise Snacks: Desk Breaks — Move more, one snack at a time",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.86,
+          "contentType": "definition",
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "DEPENDS_ON",
+          "targetId": "e_014",
+          "targetName": "RevenueCat"
+        }
+      ]
+    },
+    {
+      "entityId": "e_013",
+      "@type": "SoftwareProduct",
+      "name": "Apple Health",
+      "description": "Apple's health data platform. Completed exercise sessions are written to it as workout entries, with the user's permission.",
+      "hasChunks": [
+        {
+          "chunkId": "c_023",
+          "text": "With your permission, Exercise Snacks can write workout data to Apple Health. Specifically: When you complete an exercise, the app saves a workout entry (type, start time, duration, and estimated calories burned) to Apple Health on your device. We do not read any data from Apple Health.",
+          "sourceUrl": "https://exercise-snacks.app/privacy",
+          "pageTitle": "Privacy Policy — Exercise Snacks: Desk Breaks",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.91,
+          "contentType": "procedure",
+          "audienceType": "general"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_014",
+      "@type": "SoftwareProduct",
+      "name": "RevenueCat",
+      "description": "Third-party service used to manage in-app purchases and subscriptions.",
+      "hasChunks": [
+        {
+          "chunkId": "c_024",
+          "text": "RevenueCat Used to manage in-app purchases and subscriptions. When you make a purchase, RevenueCat processes transaction data on your behalf. No purchase is processed by us directly.",
+          "sourceUrl": "https://exercise-snacks.app/privacy",
+          "pageTitle": "Privacy Policy — Exercise Snacks: Desk Breaks",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.88,
+          "contentType": "definition",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_015",
+      "@type": "Platform",
+      "name": "Expo",
+      "description": "The React Native toolchain the app is built with.",
+      "hasChunks": [
+        {
+          "chunkId": "c_025",
+          "text": "Currently iOS only. The app is built with Expo (React Native), which supports Android, and Android availability may come in a future release.",
+          "sourceUrl": "https://exercise-snacks.app/llm-info",
+          "pageTitle": "Exercise Snacks — AI Info & Brand Reference",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.87,
+          "contentType": "definition",
+          "audienceType": "technical"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_016",
+      "@type": "exercisesnacks:Guide",
+      "name": "Posture exercises for people who sit all day",
+      "description": "A guide covering the four musculoskeletal patterns prolonged sitting creates, and the movements that counter each.",
+      "audienceType": "general",
+      "hasChunks": [
+        {
+          "chunkId": "c_026",
+          "text": "Most posture advice tells you to sit up straight. That is not a plan, because the problem is not how you sit for one minute. It is sitting in one position for eight hours.",
+          "sourceUrl": "https://exercise-snacks.app/guides/posture-exercises/",
+          "pageTitle": "Posture exercises for people who sit all day",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.85,
+          "contentType": "definition",
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_027",
+          "text": "What does change things is moving often. The exercises below target the four patterns that long sitting creates, and they are grouped that way rather than as a random list of stretches.",
+          "sourceUrl": "https://exercise-snacks.app/guides/posture-exercises/",
+          "pageTitle": "Posture exercises for people who sit all day",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.85,
+          "contentType": "procedure",
+          "audienceType": "general"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_017",
+      "@type": "exercisesnacks:Guide",
+      "name": "Desk stretches you can do without leaving your chair",
+      "description": "A guide of ten stretches grouped by the area that aches, with a 60-second minimum version.",
+      "audienceType": "general",
+      "hasChunks": [
+        {
+          "chunkId": "c_028",
+          "text": "You do not need a mat, a change of clothes, or for anyone to notice. Most of what follows can be done in a chair, at a desk, in an open-plan office, without drawing attention.",
+          "sourceUrl": "https://exercise-snacks.app/guides/desk-stretches/",
+          "pageTitle": "Desk stretches you can do without leaving your chair",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.85,
+          "contentType": "definition",
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_029",
+          "text": "Every 30 to 60 minutes is a reasonable target. Not because stretching needs that frequency, but because sitting is the thing you are interrupting.",
+          "sourceUrl": "https://exercise-snacks.app/guides/desk-stretches/",
+          "pageTitle": "Desk stretches you can do without leaving your chair",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.85,
+          "contentType": "procedure",
+          "audienceType": "general"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "entityId": "e_018",
+      "@type": "exercisesnacks:Guide",
+      "name": "Desk exercises that actually do something",
+      "description": "A guide of strength and cardio movements for the workday, including three that are invisible in an open-plan office.",
+      "audienceType": "general",
+      "hasChunks": [
+        {
+          "chunkId": "c_030",
+          "text": "Stretching makes sitting more comfortable. Exercise changes what sitting does to you. They are not the same thing, and if you only have a minute a few times a day, this is the one worth spending it on.",
+          "sourceUrl": "https://exercise-snacks.app/guides/desk-exercises/",
+          "pageTitle": "Desk exercises that actually do something",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.85,
+          "contentType": "definition",
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_031",
+          "text": "Everything below takes between 30 and 75 seconds, needs no equipment beyond a chair or a desk, and can be done in work clothes.",
+          "sourceUrl": "https://exercise-snacks.app/guides/desk-exercises/",
+          "pageTitle": "Desk exercises that actually do something",
+          "publisher": "Exercise Snacks",
+          "retrieved": "2026-11-01T09:00:00Z",
+          "relevanceScore": 0.85,
+          "contentType": "procedure",
+          "audienceType": "general"
+        }
+      ],
+      "relations": []
     }
   ]
 }
