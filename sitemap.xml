@@ -11,6 +11,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://exercise-snacks.app/guides/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://exercise-snacks.app/guides/desk-stretches/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://exercise-snacks.app/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
