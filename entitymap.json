@@ -7,8 +7,7 @@
     "url": "https://exercise-snacks.app/"
   },
   "generated": "2026-11-01T00:00:00Z",
-  "previousVersion": "https://exercise-snacks.app/entitymap.html",
-  "changeLog": "Rebuilt 2026-11-01 from the current site, replacing the 2026-06-08 map. Entity count 9 to 18. Entity IDs e_005 and above are REUSED WITH DIFFERENT MEANINGS: e_005 was 'Postprandial Blood Glucose Reduction' (Metric) and is now 'Prolonged sitting' (Concept); e_008 was 'Premium Annual Subscription' and is now 'Ten squats every 45 minutes'; e_009 was 'Apple Health Integration' and is now 'Exercise categories'. e_001 to e_004 are unchanged in meaning. Consumers holding IDs from the June file must re-fetch. Glucose reduction is no longer typed as a Metric: the publisher cites research about it rather than measuring it.",
+  "changeLog": "Rebuilt 2026-11-01 from the current site, replacing the 2026-06-08 map, which is no longer published at a public URL. Entity count 9 to 18. Entity IDs e_005 and above are REUSED WITH DIFFERENT MEANINGS: e_005 was 'Postprandial Blood Glucose Reduction' (Metric) and is now 'Prolonged sitting' (Concept); e_008 was 'Premium Annual Subscription' and is now 'Ten squats every 45 minutes'; e_009 was 'Apple Health Integration' and is now 'Exercise categories'. e_001 to e_004 are unchanged in meaning. Consumers holding IDs from the June file must re-fetch. Glucose reduction is no longer typed as a Metric: the publisher cites research about it rather than measuring it.",
   "verificationStatus": "self-declared",
   "entities": [
     {
