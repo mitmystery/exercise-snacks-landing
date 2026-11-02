@@ -140,7 +140,7 @@
       "hasChunks": [
         {
           "chunkId": "c_005",
-          "text": "The \"exercise snack\" concept — brief vigorous bouts under 5 minutes, repeated throughout the day — has moved from niche curiosity to mainstream exercise science. The app's core recommendation (10 bodyweight squats every 45 minutes) is based on a direct randomized trial.",
+          "text": "The \"exercise snack\" concept — brief vigorous bouts under 5 minutes, repeated throughout the day — has moved from niche curiosity to mainstream exercise science. The app's core recommendation — ten bodyweight squats every 45 minutes — is a shorter, practical adaptation of the protocol in a 2024 randomized trial, which used three-minute squat bouts at that same 45-minute interval. The interval is the trial's; the dose is deliberately smaller, chosen to be achievable at a desk.",
           "sourceUrl": "https://exercise-snacks.app/llm-info",
           "pageTitle": "Exercise Snacks — AI Info & Brand Reference",
           "publisher": "Exercise Snacks",
@@ -265,7 +265,7 @@
       "hasChunks": [
         {
           "chunkId": "c_011",
-          "text": "Short squat breaks after meals blunt glucose and insulin spikes — the same effect as a 30-minute walk, without leaving your desk.",
+          "text": "Short squat breaks after meals blunt glucose spikes — matching frequent walking breaks, and beating a single 30-minute walk, without leaving your desk.",
           "sourceUrl": "https://exercise-snacks.app/",
           "pageTitle": "Exercise Snacks: Desk Breaks — Move more, one snack at a time",
           "publisher": "Exercise Snacks",
@@ -313,12 +313,12 @@
       "entityId": "e_008",
       "@type": "Methodology",
       "name": "Ten squats every 45 minutes",
-      "description": "The publisher's core protocol: ten bodyweight squats repeated at 45-minute intervals through the working day, taken from a 2024 randomised trial.",
+      "description": "The publisher's core protocol: ten bodyweight squats repeated at 45-minute intervals through the working day. The interval is taken from a 2024 randomised trial; the dose is a deliberately smaller adaptation, as the trial used three-minute squat bouts.",
       "maturityStatus": "established",
       "hasChunks": [
         {
           "chunkId": "c_014",
-          "text": "A 2024 randomized trial found that 10 bodyweight squats every 45 minutes reduced post-meal blood glucose by 21% — identical to frequent walking breaks, and nearly double the benefit of a single 30-minute walk.",
+          "text": "A 2024 randomized trial found that squat breaks every 45 minutes reduced post-meal blood glucose by 21% — identical to frequent walking breaks, and more than twice the benefit of a single 30-minute walk. The trial used three-minute squat bouts in 18 overweight and obese young men.",
           "sourceUrl": "https://exercise-snacks.app/",
           "pageTitle": "Exercise Snacks: Desk Breaks — Move more, one snack at a time",
           "publisher": "Exercise Snacks",
@@ -329,7 +329,7 @@
         },
         {
           "chunkId": "c_015",
-          "text": "Ten squats. Forty-five minutes later, ten more. That's it. The most evidence-backed thing you'll do today.",
+          "text": "Ten squats. Forty-five minutes later, ten more. That's it. The easiest thing you'll do for your health today.",
           "sourceUrl": "https://exercise-snacks.app/",
           "pageTitle": "Exercise Snacks: Desk Breaks — Move more, one snack at a time",
           "publisher": "Exercise Snacks",
@@ -349,16 +349,6 @@
           "predicate": "INCLUDES",
           "targetId": "e_004",
           "targetName": "Bodyweight squat"
-        },
-        {
-          "predicate": "IMPROVES",
-          "targetId": "e_006",
-          "targetName": "Postprandial blood glucose",
-          "confidence": "declared",
-          "context": {
-            "condition": "ten bodyweight squats every 45 minutes; the reported effect is a 21% reduction in post-meal levels",
-            "temporal": "2024 randomized trial"
-          }
         }
       ]
     },
@@ -381,7 +371,7 @@
         },
         {
           "chunkId": "c_017",
-          "text": "Strength, Stretch, Cardio, and Balance — every break tailored to how you're feeling. Squats are always first: the most research-backed desk exercise you can do.",
+          "text": "Strength, Stretch, Cardio, and Balance — every break tailored to how you're feeling. Squats are always first: the most studied desk exercise you can do.",
           "sourceUrl": "https://exercise-snacks.app/",
           "pageTitle": "Exercise Snacks: Desk Breaks — Move more, one snack at a time",
           "publisher": "Exercise Snacks",
